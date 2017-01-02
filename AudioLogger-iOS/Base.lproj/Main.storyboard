@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="AudioLogger_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,90 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLd-2J-xTb" userLabel="ID Container View">
+                                <connections>
+                                    <segue destination="B6O-4W-y7P" kind="embed" id="x7k-TM-fSK"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ln-R7-Fvs" userLabel="Tag Container View">
+                                <connections>
+                                    <segue destination="jcz-WN-ul6" kind="embed" id="Jf5-YD-Xkj"/>
+                                </connections>
+                            </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WWq-cf-aay">
+                                <segments>
+                                    <segment title="Tag"/>
+                                    <segment title="ID"/>
+                                </segments>
+                                <color key="tintColor" red="0.97254901960784312" green="0.0" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentTappedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="BvC-C1-IG2"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="tintColor" red="0.97254901960784312" green="0.10196078431372549" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WWq-cf-aay" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0HI-1v-ihG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9ln-R7-Fvs" secondAttribute="bottom" id="3m8-oU-bK2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9ln-R7-Fvs" secondAttribute="trailing" constant="-16" id="6qq-kO-mqe"/>
+                            <constraint firstItem="lLd-2J-xTb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8nh-EY-jgZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lLd-2J-xTb" secondAttribute="bottom" id="HoO-rY-qfF"/>
+                            <constraint firstItem="9ln-R7-Fvs" firstAttribute="top" secondItem="WWq-cf-aay" secondAttribute="bottom" constant="-56" id="K5E-qi-3cD"/>
+                            <constraint firstAttribute="trailing" secondItem="lLd-2J-xTb" secondAttribute="trailing" id="Oqw-XF-GjS"/>
+                            <constraint firstItem="lLd-2J-xTb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bA4-e4-GWt"/>
+                            <constraint firstItem="WWq-cf-aay" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eL2-m1-vnt"/>
+                            <constraint firstItem="9ln-R7-Fvs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="qaU-2K-cI7"/>
+                            <constraint firstItem="WWq-cf-aay" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zUF-U6-Z7A"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="de3-25-aE5"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="idContainerView" destination="lLd-2J-xTb" id="d8R-gR-UyO"/>
+                        <outlet property="tagContainerView" destination="9ln-R7-Fvs" id="pko-f4-uez"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="373.60000000000002" y="-87.706146926536732"/>
+        </scene>
+        <!--Tag View Controller-->
+        <scene sceneID="H8c-Fc-SQs">
+            <objects>
+                <viewController id="jcz-WN-ul6" userLabel="Tag View Controller" customClass="TagViewController" customModule="AudioLogger_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cGR-6r-Jit"/>
+                        <viewControllerLayoutGuide type="bottom" id="9S6-ha-MdB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EIo-lS-rj8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3V-kU-oBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197" y="-88"/>
+        </scene>
+        <!--ID View Controller-->
+        <scene sceneID="K2L-rb-zpi">
+            <objects>
+                <viewController id="B6O-4W-y7P" userLabel="ID View Controller" customClass="IDViewController" customModule="AudioLogger_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LIg-AE-Xmk"/>
+                        <viewControllerLayoutGuide type="bottom" id="DbK-Ng-3dL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aVG-n0-466">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h1e-J5-UIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1970" y="-88"/>
         </scene>
     </scenes>
 </document>
