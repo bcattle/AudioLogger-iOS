@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F720E163200D1EA68B2A6CF447C7123E3D491840",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F720E163200D1EA68B2A6CF447C7123E3D491840" : 9223372036854775807,
+    "DA3225C64F00464E541795F9AAB591214DC5E6B2" : 9223372036854775807,
+    "2F912AC510C2FA80E09A079493AA58A6C3E81FE0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E5559B39-328B-4C78-BC5F-F3356A872DC6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F720E163200D1EA68B2A6CF447C7123E3D491840" : "AudioLogger-iOS\/",
+    "DA3225C64F00464E541795F9AAB591214DC5E6B2" : "ffmpeg-ios-static-libs\/",
+    "2F912AC510C2FA80E09A079493AA58A6C3E81FE0" : "OpusKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AudioLogger-iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AudioLogger-iOS.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:chrisballinger\/OpusKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2F912AC510C2FA80E09A079493AA58A6C3E81FE0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:chrisballinger\/ffmpeg-ios-static-libs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DA3225C64F00464E541795F9AAB591214DC5E6B2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bcattle\/AudioLogger-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F720E163200D1EA68B2A6CF447C7123E3D491840"
+    }
+  ]
+}
