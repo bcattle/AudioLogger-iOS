@@ -6,23 +6,22 @@ PODS:
     - EZAudio/Core
     - TPCircularBuffer (= 1.1)
   - libogg (1.3.2)
-  - libopus (1.1):
-    - libopus/float (= 1.1)
-  - libopus/float (1.1)
+  - liboggz (1.1.1):
+    - libogg (>= 1.0)
   - TPCircularBuffer (1.1)
 
 DEPENDENCIES:
   - EZAudio
   - libogg
-  - libopus
+  - liboggz
   - TPCircularBuffer
 
 SPEC CHECKSUMS:
   EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
   libogg: 924cd993b3fcf4d93568f7d582496061ef82716e
-  libopus: ad5f060dcb8f30f139777244d70f9111f1c80863
+  liboggz: 6605f8cd394de0fe330957507179f6bdcce716d1
   TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
 
-PODFILE CHECKSUM: 8f700404d56e0c44146dd0c188f23307e15446d1
+PODFILE CHECKSUM: b5b2e6036f270283e28d8c80094d7dbee1902e04
 
 COCOAPODS: 1.1.1

@@ -14,6 +14,7 @@
 		932A2C351E1E22620041D22C /* OKDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 932A2C2C1E1E22620041D22C /* OKDecoder.m */; };
 		932A2C361E1E22620041D22C /* OKPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 932A2C2E1E1E22620041D22C /* OKPacket.m */; };
 		932A2C371E1E22620041D22C /* OpusKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 932A2C301E1E22620041D22C /* OpusKit.m */; };
+		932A2C451E1E2DDE0041D22C /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 932A2C441E1E2DDE0041D22C /* libopus.a */; };
 		9350163C1E1A076700B986D8 /* IDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350163B1E1A076700B986D8 /* IDViewController.swift */; };
 		9350163F1E1A07D400B986D8 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350163E1E1A07D400B986D8 /* TagViewController.swift */; };
 		93A578851E1E209D00B43F2D /* ALOpusEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A578841E1E209D00B43F2D /* ALOpusEncoder.m */; };
@@ -40,6 +41,12 @@
 		932A2C2E1E1E22620041D22C /* OKPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKPacket.m; path = ../OpusKit/OKPacket.m; sourceTree = "<group>"; };
 		932A2C2F1E1E22620041D22C /* OpusKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpusKit.h; path = ../OpusKit/OpusKit.h; sourceTree = "<group>"; };
 		932A2C301E1E22620041D22C /* OpusKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpusKit.m; path = ../OpusKit/OpusKit.m; sourceTree = "<group>"; };
+		932A2C391E1E24200041D22C /* write-feed.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "write-feed.c"; sourceTree = "<group>"; };
+		932A2C3F1E1E2DD10041D22C /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		932A2C401E1E2DD10041D22C /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		932A2C411E1E2DD10041D22C /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		932A2C421E1E2DD10041D22C /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
+		932A2C441E1E2DDE0041D22C /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
 		9350163B1E1A076700B986D8 /* IDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDViewController.swift; sourceTree = "<group>"; };
 		9350163E1E1A07D400B986D8 /* TagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
 		9384DAE81E1A2F4A002CC0B0 /* ogg_encoder_example.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ogg_encoder_example.c; sourceTree = "<group>"; };
@@ -63,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932A2C451E1E2DDE0041D22C /* libopus.a in Frameworks */,
 				68A656FFEE88627ABA1120F4 /* libPods-AudioLogger-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +110,43 @@
 			path = ../../OpusKit/Example;
 			sourceTree = "<group>";
 		};
+		932A2C381E1E240C0041D22C /* liboggz */ = {
+			isa = PBXGroup;
+			children = (
+				932A2C391E1E24200041D22C /* write-feed.c */,
+			);
+			name = liboggz;
+			sourceTree = "<group>";
+		};
+		932A2C3D1E1E2DD10041D22C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				932A2C3E1E1E2DD10041D22C /* opus */,
+			);
+			name = include;
+			path = "../../Opus-iOS/dependencies/include";
+			sourceTree = "<group>";
+		};
+		932A2C3E1E1E2DD10041D22C /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				932A2C3F1E1E2DD10041D22C /* opus.h */,
+				932A2C401E1E2DD10041D22C /* opus_defines.h */,
+				932A2C411E1E2DD10041D22C /* opus_multistream.h */,
+				932A2C421E1E2DD10041D22C /* opus_types.h */,
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		932A2C431E1E2DDE0041D22C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				932A2C441E1E2DDE0041D22C /* libopus.a */,
+			);
+			name = lib;
+			path = "../../Opus-iOS/dependencies/lib";
+			sourceTree = "<group>";
+		};
 		9350163D1E1A07A600B986D8 /* Helper Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +161,7 @@
 		9384DAE71E1A2F38002CC0B0 /* docs */ = {
 			isa = PBXGroup;
 			children = (
+				932A2C381E1E240C0041D22C /* liboggz */,
 				93A578821E1E1FE400B43F2D /* OpusKit */,
 				9384DAED1E1A3946002CC0B0 /* opusenc.c */,
 				9384DAE81E1A2F4A002CC0B0 /* ogg_encoder_example.c */,
@@ -166,6 +212,8 @@
 		93CE840D1E1A5AE600FD0139 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				932A2C3D1E1E2DD10041D22C /* include */,
+				932A2C431E1E2DDE0041D22C /* lib */,
 				932A2C311E1E22620041D22C /* OpusKit */,
 			);
 			name = Vendor;
@@ -223,7 +271,7 @@
 				TargetAttributes = {
 					93C707C31E19C101008A0A39 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 2BB96LL2BX;
+						DevelopmentTeam = KMF8VCTT4A;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -450,10 +498,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 2BB96LL2BX;
+				DEVELOPMENT_TEAM = KMF8VCTT4A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"VAR_ARRAYS=1",
+				);
 				INFOPLIST_FILE = "AudioLogger-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EZAudio\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TPCircularBuffer\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/libogg\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/liboggz\"",
+					"$(PROJECT_DIR)/../Opus-iOS/dependencies/lib/",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.bcattle.AudioLogger-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AudioLogger-iOS/AudioLogger-iOS-Bridging-Header.h";
@@ -468,10 +529,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 2BB96LL2BX;
+				DEVELOPMENT_TEAM = KMF8VCTT4A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"VAR_ARRAYS=1",
+				);
 				INFOPLIST_FILE = "AudioLogger-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EZAudio\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TPCircularBuffer\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/libogg\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/liboggz\"",
+					"$(PROJECT_DIR)/../Opus-iOS/dependencies/lib/",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.bcattle.AudioLogger-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AudioLogger-iOS/AudioLogger-iOS-Bridging-Header.h";

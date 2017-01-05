@@ -10,7 +10,7 @@ target 'AudioLogger-iOS' do
 
   # Pods for OggKit
   pod 'libogg'
-  pod 'libopus'
+  pod 'liboggz'
   pod 'TPCircularBuffer'
   pod 'EZAudio'
 

@@ -15,22 +15,22 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var fileUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        fileUrl.appendPathComponent("test.opus")
+        let encoder = ALOpusEncoder(filename: fileUrl.path)
+        encoder?.close()
+        print("done")
     }
-
+    
     @IBAction func segmentTapped(sender: UISegmentedControl) {
-//        let duration = 0.25
         if sender.selectedSegmentIndex == 0 {
-//            UIView.animate(withDuration: duration, animations: {
-                self.tagContainerView.alpha = 1
-                self.idContainerView.alpha = 0
-//            })
+            self.tagContainerView.alpha = 1
+            self.idContainerView.alpha = 0
         } else {
-//            UIView.animate(withDuration: duration, animations: {
-                self.tagContainerView.alpha = 0
-                self.idContainerView.alpha = 1
-//            })
+            self.tagContainerView.alpha = 0
+            self.idContainerView.alpha = 1
         }
     }
-
+    
 }
 
