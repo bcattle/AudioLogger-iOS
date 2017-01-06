@@ -10,30 +10,18 @@
 		327912DE3A84D738ED79B73C /* Pods_AudioLogger_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1046029DD0533C30368EA2E5 /* Pods_AudioLogger_iOS.framework */; };
 		9350163C1E1A076700B986D8 /* IDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350163B1E1A076700B986D8 /* IDViewController.swift */; };
 		9350163F1E1A07D400B986D8 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350163E1E1A07D400B986D8 /* TagViewController.swift */; };
-		9384DAF21E1A3A96002CC0B0 /* opus_header.c in Sources */ = {isa = PBXBuildFile; fileRef = 9384DAF01E1A3A96002CC0B0 /* opus_header.c */; };
 		93C707C81E19C101008A0A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C707C71E19C101008A0A39 /* AppDelegate.swift */; };
 		93C707CA1E19C101008A0A39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C707C91E19C101008A0A39 /* MainViewController.swift */; };
 		93C707CD1E19C101008A0A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C707CB1E19C101008A0A39 /* Main.storyboard */; };
 		93C707CF1E19C101008A0A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C707CE1E19C101008A0A39 /* Assets.xcassets */; };
 		93C707D21E19C101008A0A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C707D01E19C101008A0A39 /* LaunchScreen.storyboard */; };
-		93CE83FC1E1A407C00FD0139 /* wav_io.c in Sources */ = {isa = PBXBuildFile; fileRef = 93CE83FA1E1A407C00FD0139 /* wav_io.c */; };
-		93CE83FF1E1A413F00FD0139 /* diag_range.c in Sources */ = {isa = PBXBuildFile; fileRef = 93CE83FD1E1A413F00FD0139 /* diag_range.c */; };
-		93CE84011E1A47A300FD0139 /* ALOpusEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9384DAF41E1A3B22002CC0B0 /* ALOpusEncoder.m */; };
-		93CE84091E1A574400FD0139 /* lpc.c in Sources */ = {isa = PBXBuildFile; fileRef = 93CE84071E1A574400FD0139 /* lpc.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1046029DD0533C30368EA2E5 /* Pods_AudioLogger_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioLogger_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9350163B1E1A076700B986D8 /* IDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDViewController.swift; sourceTree = "<group>"; };
 		9350163E1E1A07D400B986D8 /* TagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
-		9384DAE81E1A2F4A002CC0B0 /* ogg_encoder_example.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ogg_encoder_example.c; sourceTree = "<group>"; };
 		9384DAE91E1A358E002CC0B0 /* AudioLogger-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioLogger-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
-		9384DAED1E1A3946002CC0B0 /* opusenc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = opusenc.c; sourceTree = "<group>"; };
-		9384DAEE1E1A3946002CC0B0 /* opusenc.h */ = {isa = PBXFileReference; explicitFileType = text; path = opusenc.h; sourceTree = "<group>"; };
-		9384DAF01E1A3A96002CC0B0 /* opus_header.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = opus_header.c; sourceTree = "<group>"; };
-		9384DAF11E1A3A96002CC0B0 /* opus_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_header.h; sourceTree = "<group>"; };
-		9384DAF31E1A3B22002CC0B0 /* ALOpusEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALOpusEncoder.h; sourceTree = "<group>"; };
-		9384DAF41E1A3B22002CC0B0 /* ALOpusEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALOpusEncoder.m; sourceTree = "<group>"; };
 		93C707C41E19C101008A0A39 /* AudioLogger-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AudioLogger-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C707C71E19C101008A0A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93C707C91E19C101008A0A39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -41,14 +29,6 @@
 		93C707CE1E19C101008A0A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93C707D11E19C101008A0A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93C707D31E19C101008A0A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93CE83FA1E1A407C00FD0139 /* wav_io.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = wav_io.c; sourceTree = "<group>"; };
-		93CE83FB1E1A407C00FD0139 /* wav_io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav_io.h; sourceTree = "<group>"; };
-		93CE83FD1E1A413F00FD0139 /* diag_range.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = diag_range.c; sourceTree = "<group>"; };
-		93CE83FE1E1A413F00FD0139 /* diag_range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = diag_range.h; sourceTree = "<group>"; };
-		93CE84001E1A417A00FD0139 /* cpusupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpusupport.h; sourceTree = "<group>"; };
-		93CE84041E1A550F00FD0139 /* stack_alloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack_alloc.h; sourceTree = "<group>"; };
-		93CE84071E1A574400FD0139 /* lpc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = lpc.c; sourceTree = "<group>"; };
-		93CE84081E1A574400FD0139 /* lpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpc.h; sourceTree = "<group>"; };
 		CC1FF1E22E7F97D78A6C7C67 /* Pods-AudioLogger-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioLogger-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioLogger-iOS/Pods-AudioLogger-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		F7B70CF899F2594CAD947900 /* Pods-AudioLogger-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioLogger-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioLogger-iOS/Pods-AudioLogger-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,33 +56,6 @@
 			name = "Helper Files";
 			sourceTree = "<group>";
 		};
-		9384DAE71E1A2F38002CC0B0 /* docs */ = {
-			isa = PBXGroup;
-			children = (
-				9384DAED1E1A3946002CC0B0 /* opusenc.c */,
-				9384DAE81E1A2F4A002CC0B0 /* ogg_encoder_example.c */,
-			);
-			name = docs;
-			sourceTree = "<group>";
-		};
-		9384DAEF1E1A3A8B002CC0B0 /* opus-tools */ = {
-			isa = PBXGroup;
-			children = (
-				93CE84001E1A417A00FD0139 /* cpusupport.h */,
-				93CE83FD1E1A413F00FD0139 /* diag_range.c */,
-				93CE83FE1E1A413F00FD0139 /* diag_range.h */,
-				93CE84071E1A574400FD0139 /* lpc.c */,
-				93CE84081E1A574400FD0139 /* lpc.h */,
-				9384DAF01E1A3A96002CC0B0 /* opus_header.c */,
-				9384DAF11E1A3A96002CC0B0 /* opus_header.h */,
-				9384DAEE1E1A3946002CC0B0 /* opusenc.h */,
-				93CE84041E1A550F00FD0139 /* stack_alloc.h */,
-				93CE83FA1E1A407C00FD0139 /* wav_io.c */,
-				93CE83FB1E1A407C00FD0139 /* wav_io.h */,
-			);
-			name = "opus-tools";
-			sourceTree = "<group>";
-		};
 		93C707BB1E19C101008A0A39 = {
 			isa = PBXGroup;
 			children = (
@@ -124,26 +77,14 @@
 		93C707C61E19C101008A0A39 /* AudioLogger-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9384DAE71E1A2F38002CC0B0 /* docs */,
 				93C707C71E19C101008A0A39 /* AppDelegate.swift */,
 				93C707C91E19C101008A0A39 /* MainViewController.swift */,
 				9350163E1E1A07D400B986D8 /* TagViewController.swift */,
 				9350163B1E1A076700B986D8 /* IDViewController.swift */,
 				93C707CB1E19C101008A0A39 /* Main.storyboard */,
 				9350163D1E1A07A600B986D8 /* Helper Files */,
-				9384DAF31E1A3B22002CC0B0 /* ALOpusEncoder.h */,
-				9384DAF41E1A3B22002CC0B0 /* ALOpusEncoder.m */,
-				93CE840D1E1A5AE600FD0139 /* Vendor */,
 			);
 			path = "AudioLogger-iOS";
-			sourceTree = "<group>";
-		};
-		93CE840D1E1A5AE600FD0139 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				9384DAEF1E1A3A8B002CC0B0 /* opus-tools */,
-			);
-			name = Vendor;
 			sourceTree = "<group>";
 		};
 		D71BBB09E5933279B6FFBCE5 /* Frameworks */ = {
@@ -289,14 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93C707CA1E19C101008A0A39 /* MainViewController.swift in Sources */,
-				9384DAF21E1A3A96002CC0B0 /* opus_header.c in Sources */,
 				9350163F1E1A07D400B986D8 /* TagViewController.swift in Sources */,
-				93CE83FC1E1A407C00FD0139 /* wav_io.c in Sources */,
 				93C707C81E19C101008A0A39 /* AppDelegate.swift in Sources */,
 				9350163C1E1A076700B986D8 /* IDViewController.swift in Sources */,
-				93CE84011E1A47A300FD0139 /* ALOpusEncoder.m in Sources */,
-				93CE84091E1A574400FD0139 /* lpc.c in Sources */,
-				93CE83FF1E1A413F00FD0139 /* diag_range.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

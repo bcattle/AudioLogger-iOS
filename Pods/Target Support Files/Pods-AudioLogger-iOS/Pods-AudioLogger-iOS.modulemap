@@ -1,0 +1,6 @@
+framework module Pods_AudioLogger_iOS {
+  umbrella header "Pods-AudioLogger-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
