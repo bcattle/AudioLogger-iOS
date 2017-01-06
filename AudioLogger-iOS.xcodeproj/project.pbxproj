@@ -271,7 +271,7 @@
 				TargetAttributes = {
 					93C707C31E19C101008A0A39 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = KMF8VCTT4A;
+						DevelopmentTeam = 2BB96LL2BX;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -498,7 +498,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = KMF8VCTT4A;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2BB96LL2BX;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -515,8 +516,10 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/liboggz\"",
 					"$(PROJECT_DIR)/../Opus-iOS/dependencies/lib/",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.bcattle.AudioLogger-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.bcattle.AudioLoggeriOS2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AudioLogger-iOS/AudioLogger-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -529,7 +532,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = KMF8VCTT4A;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2BB96LL2BX;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -546,7 +550,7 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/liboggz\"",
 					"$(PROJECT_DIR)/../Opus-iOS/dependencies/lib/",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.bcattle.AudioLogger-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.bcattle.AudioLoggeriOS2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AudioLogger-iOS/AudioLogger-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
