@@ -7,19 +7,40 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MainViewController: UIViewController {
     @IBOutlet weak var tagContainerView:UIView!
     @IBOutlet weak var idContainerView:UIView!
+    var encoder:ALOpusEncoder?
+    var fileUrl:URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var fileUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        fileUrl.appendPathComponent("test.opus")
-        let encoder = ALOpusEncoder(filename: fileUrl.path)
-        encoder?.close()
-        print("done")
+        AVAudioSession.sharedInstance().requestRecordPermission { [weak self] (granted) in
+            if granted {
+                var url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+                url.appendPathComponent("test.opus")
+                self?.fileUrl = url
+                self?.encoder = ALOpusEncoder(filename: url.path)
+                self?.encoder?.startWriting()
+                print("done")
+            } else {
+                print("Error: Need permission to record audio")
+            }
+        }        
+    }
+    
+    @IBAction func stopButtonTapped(sender: UIButton) {
+        encoder?.stopWriting()
+    }
+    
+    @IBAction func shareButtonTapped(sender: UIButton) {
+        if let url = fileUrl {
+            let activityViewController = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+            present(activityViewController, animated: true, completion: nil)
+        }
     }
     
     @IBAction func segmentTapped(sender: UISegmentedControl) {

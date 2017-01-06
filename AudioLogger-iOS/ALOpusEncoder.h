@@ -13,7 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ALOpusEncoder : NSObject
 -(instancetype)init NS_UNAVAILABLE;
 -(instancetype __nullable)initWithFilename:(NSString*)filename;
--(void) close;
+-(void)startWriting;
+-(void)stopWriting;
+//-(void) close;
 @end
 
 NS_ASSUME_NONNULL_END
