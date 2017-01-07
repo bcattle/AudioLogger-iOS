@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Cartography.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>EZAudio.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>544212980401A6DA7806F65EAD8C6637</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>68E504159A95438F18EAACAB7BBD121C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B42A1C563331D6A5A52594827651E956</key>
+		<key>7EBD69497FF84BB774F3A9393BC97C8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D0A13C2D5AF037EABBF5907CD11A9266</key>
+		<key>B42A1C563331D6A5A52594827651E956</key>
 		<dict>
 			<key>primary</key>
 			<true/>

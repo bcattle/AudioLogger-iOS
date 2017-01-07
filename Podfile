@@ -7,4 +7,5 @@ target 'AudioLogger-iOS' do
 
   # Pods for AudioLogger-iOS
   pod 'EZAudio'
+  pod 'Cartography'
 end

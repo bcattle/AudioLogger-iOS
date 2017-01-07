@@ -1,4 +1,5 @@
 PODS:
+  - Cartography (1.0.1)
   - EZAudio (1.1.5):
     - EZAudio/Full (= 1.1.5)
   - EZAudio/Core (1.1.5)
@@ -8,12 +9,14 @@ PODS:
   - TPCircularBuffer (1.1)
 
 DEPENDENCIES:
+  - Cartography
   - EZAudio
 
 SPEC CHECKSUMS:
+  Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
   EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
   TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
 
-PODFILE CHECKSUM: c99f7c6cc912cfadcdc36573bbeac0ad8bd6f6fb
+PODFILE CHECKSUM: bcc683217f180939a1f6267e340ec8772fcf67e5
 
 COCOAPODS: 1.1.1
