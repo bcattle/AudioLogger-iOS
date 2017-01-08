@@ -7,250 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00DEA145A54A1BCBB20AA300AAE5F4D7 /* TPCircularBuffer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 886072BE427E016971E58F4F29EE13DA /* TPCircularBuffer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		046FBF497EF986466E1556C14E0C2961 /* Pods-AudioLogger-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A4D25A289280F8D5CBAFF4F198F683 /* Pods-AudioLogger-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05C1C6C0B246E3C5FDF06B2A0BB63F0D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E7187993D4D0B48870F16D5BC621F1 /* View.swift */; };
-		0679CBD1CECA9C938E54CB01D22E2268 /* EZAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = AF24606852258B5550DE8F4EEDD8D4F2 /* EZAudioPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		067B84F7E9EFBEAFDC824931CAAD2051 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B2659D1E337210C0AE73DB3D01ADB /* Align.swift */; };
-		0B6019E3215CFE64ED539846F5E537A7 /* EZOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 05B036FD6E200CDC94D83740DA6A6453 /* EZOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1431619A2565DD8EAB817240E078707C /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA95A4C53ECD6CC357705EF73912E /* LayoutProxy.swift */; };
-		15442AF286C7E02B95CF4ED69A0455AD /* EZAudioFFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CCFB1621F0C290DE98BA4DFD826BBF6 /* EZAudioFFT.m */; };
-		1DA7CE3B8FD808A45694FC8AB6B402F4 /* EZAudioDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 852DA7D83960817A9E472321DDBC676B /* EZAudioDevice.m */; };
-		229AC6F812432166C934DF127C314ADF /* EZAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BA21D6996FD4A0FE6A12E084DBA4BA /* EZAudioFile.m */; };
-		22B60CFF6E57EB6DF8CCA5D2CAC3178C /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51E9DFE4FBF84E92C99EAD7D58F298D /* Priority.swift */; };
-		24EF682ACFF8F1CEA8BDDAA340220AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E994A7EF38C9243BB2E8D7F16913CFD /* Foundation.framework */; };
-		29CFB4CF50230793798F690E537EBD33 /* EZRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 171676266E68F82EFD4F8AF6415E6766 /* EZRecorder.m */; };
-		2A07DA74AE761678ACBEBD1E23855935 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E994A7EF38C9243BB2E8D7F16913CFD /* Foundation.framework */; };
-		30293659ADB66897954F1E65B3D01858 /* EZAudioFloatConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 66162C86D661018B88C5E607D6CF41C2 /* EZAudioFloatConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30C1163E6E1E148CEF231EA8E68EF611 /* EZPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F794BAFC28727AD8C28F21576B6863 /* EZPlot.m */; };
-		3894F9B23F5075D0944E036D85DF8929 /* EZAudio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297CC6DD7AFA1BDCA4A6C05BA54C220 /* EZAudio-dummy.m */; };
-		3B24EF46D69198023388B4453E82FBA6 /* EZAudioFile.h in Headers */ = {isa = PBXBuildFile; fileRef = FE12A377AF51DB1131093E9B8F727B7B /* EZAudioFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BB8566A0691DDAB69C67923A9E0DBD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E994A7EF38C9243BB2E8D7F16913CFD /* Foundation.framework */; };
-		3F2391D80C5AE124D6E13AD3FABFFE01 /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338495D9BC6C6025D3DD50DC1B57ECDC /* Constrain.swift */; };
-		400DAFD9B974DBE1038FBB489D277F3B /* EZAudio.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BB409B930A5F6F739F2D21DFB0A95F3 /* EZAudio.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		401D39791B5638A5BE06EA9DE85B98CD /* EZAudioDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E7AE9BDE3822C65DCF42BA1ED0EB7B /* EZAudioDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		411296BE807A2972A3FDFF5D3A9BA351 /* JPSVolumeButtonHandler-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B5DBEF51C0F00BC876F58FF833A47D4 /* JPSVolumeButtonHandler-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		431D72D6FA2B02791F4951F537C19E27 /* EZAudioFloatData.h in Headers */ = {isa = PBXBuildFile; fileRef = AB6B46320D66AABCB3912CF66A42C66E /* EZAudioFloatData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4453CC0C9C63FE6F4D2501B02C389B7F /* EZAudio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39BC7314DF78A82D8A5162FE0AC141C3 /* EZAudio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4732F092C9EF80D356DF6D7D4B7E4F45 /* EZAudioFFT.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0FAF4C7822A71C29E0B5E640CC4DED /* EZAudioFFT.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DC1EFBEC0AD9DDD55D4B06348E679A2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E0E3FC32345C73B6A29224A9B94AAD /* AudioToolbox.framework */; };
-		56EBA0C77344F63CA6A36265A6496A71 /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0946F5D107C5ED552DF3B33FA7993A3 /* LayoutSupport.swift */; };
-		5A73F31E8B984567AC6713BE2AB1774F /* EZPlot.h in Headers */ = {isa = PBXBuildFile; fileRef = 81476A9AC1A000032DC6CE5D573D2A10 /* EZPlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B6DCBCD6C63B1D186D703D9F46A7ECB /* EZAudioPlotGL.m in Sources */ = {isa = PBXBuildFile; fileRef = 390CF312ECD7AE8A940E1553353D68C2 /* EZAudioPlotGL.m */; };
-		5CAA19E0EB7CA9EB6047A3E43EC1FC8F /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE131145D0DCD18AD9512EFD02BB1BA /* ConstraintGroup.swift */; };
-		5F5D3FB5718F4673DC293DA7D97EF046 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29371A90668B3E9F4B6B9D0D48636871 /* Compound.swift */; };
-		6541F0D17CEB6B3957649E220612C2EF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E0E3FC32345C73B6A29224A9B94AAD /* AudioToolbox.framework */; };
-		6591C59D9FA2DFCA5DFC3F8A53BCE6FC /* TPCircularBuffer+AudioBufferList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE5E0DB6BCC450AD41CF98E9E716161 /* TPCircularBuffer+AudioBufferList.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66D2D0BAD7D7C5574E894DED6521825A /* JPSVolumeButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 807F8612D205573E7A5F1891FAD34DCA /* JPSVolumeButtonHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67ED04B8A48E5CB3676E0B99E7A3F2B8 /* EZAudioUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D90EC1737952CE9562586261D20D03 /* EZAudioUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		697414FCC3C6F8176768FFDDEC73A108 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31EEDFE2378905379FFF02E186D4DF /* Expression.swift */; };
-		6B0B01CB3BDE996E8323253F760CBD38 /* TPCircularBuffer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E5BFC4C515F6990AE3D3125FA87FC8 /* TPCircularBuffer-dummy.m */; };
-		6BE91DDECCD7415E19090617DEFD0B0A /* JPSVolumeButtonHandler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E555E0D46CC0984A3F04791C11E84E7 /* JPSVolumeButtonHandler-dummy.m */; };
-		6E965455BD1F321EB9C294779BEFBE96 /* EZAudioFloatData.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D06CC7229EB9750550629F157CC716 /* EZAudioFloatData.m */; };
-		6EBAB0888F63CFF715B58EDCBB5C6F64 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 85DD8022B722A6703E1E10587F92A93D /* TPCircularBuffer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		702ACA6373F6EF0E0AFAD39BCB9FB162 /* EZAudioPlotGL.h in Headers */ = {isa = PBXBuildFile; fileRef = 599FAABB4BD02FD838EBB89DC26BEC12 /* EZAudioPlotGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74BD0664EEC77366D314DA22DD4E721F /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B0462A01FC6FF1F16BD3E3C5E73C4 /* Size.swift */; };
-		7965A04590F67375EC65249F774B3F6B /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7373D997FD2307586545D6B0FA784 /* Distribute.swift */; };
-		79E97A074357DEECA6859DAACDB72DF2 /* EZMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F61B4BFDB5765BA7225601CFD92E /* EZMicrophone.m */; };
-		8187ABD8FC38C9665E479C07345788F6 /* EZAudioDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF59A7022F8A4A5CBC59BC62D5EAD2A /* EZAudioDisplayLink.m */; };
-		8233B970DF692F0992BF413CC80E0F78 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1D0A0868A0FB8D62B91E7038BAD42B /* AVFoundation.framework */; };
-		825877E4C307FC88F7B99A3C0E5FFEC2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1D0A0868A0FB8D62B91E7038BAD42B /* AVFoundation.framework */; };
-		88B21B225B2D6BFAB3F50B88495299F1 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB8E9F5D5E90987D020AAE01D6EA8B8 /* Point.swift */; };
-		8B9CB0AFC51E7D91CC6C0187BC5F380B /* EZAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B634981FE8CBD201C9F2F4172F365380 /* EZAudioPlayer.m */; };
-		8F6662FEFB048F86B48A02D8707E202B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E994A7EF38C9243BB2E8D7F16913CFD /* Foundation.framework */; };
-		90600B1223C5616C07413C4C87CC24B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E994A7EF38C9243BB2E8D7F16913CFD /* Foundation.framework */; };
-		9B0DE546FF8E9704B9F3F828BD396B6D /* EZOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AE64D5106EEEA6B060B6CA09C92B57 /* EZOutput.m */; };
-		9B71D4856DF9CFE5715EDF4E5B3B2844 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC6A2795DFBF7337597716B5B1C30F /* ViewUtils.swift */; };
-		9C7E8D85506FA06C506A330B200FCEE7 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0669B6E88B6F0A3BF6535269F63D56 /* Context.swift */; };
-		A084DDD7233A950676D60FCB4FA8BE74 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E820B4D3D77987A112AFDA9A005C1 /* Edges.swift */; };
-		A09E8A7A11837B71CB950524E184440D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA425FE125F43CB6485A5CBBE7B533DA /* MediaPlayer.framework */; };
-		A67286FF819C5C943D027E9C40DF456D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468894115787F8DFDF4F59B79D27CA8 /* Extensions.swift */; };
-		A7BD4B74A484170A23FF6C7611A11B40 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47448F110158B7853729A61AE7D57018 /* Property.swift */; };
-		AE0D108936772D2424A68AC86B44DA3F /* JPSVolumeButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 332DB362D38620F67421AF602378C1E2 /* JPSVolumeButtonHandler.m */; };
-		AE7ACD648B84D1C8645049118FE42D54 /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B630C66B24F00DB5DCC6C55C6CFEFC12 /* Cartography-dummy.m */; };
-		B0B7169A1E3ECFAF148DC72D612190FD /* EZAudioPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C030D64F12C9AA7BF7D019EF2650F /* EZAudioPlot.m */; };
-		B2C62634A0D83824F037E18C036DD453 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = FCA5CC7B96993730505A1D42EAF6959B /* TPCircularBuffer.c */; };
-		B65335AD1D90F007179B36CEB8EDF502 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90DE9A429FC702BDF65F98CC6EC900D /* GLKit.framework */; };
-		BDBEEE76EEFC2E049F0A2ED8B9419173 /* EZMicrophone.h in Headers */ = {isa = PBXBuildFile; fileRef = FC8537A7AF4154C3DA78BD4395679417 /* EZMicrophone.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E2993258D9072061A389E518053F8B /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9313E186D68D8634A110831B9CEE2D /* Constraint.swift */; };
-		CD587D5E28B0428E3B4163F1604D26BF /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB70409EAE99986767021966147AE02 /* Edge.swift */; };
-		CDACD3167C9250B4B13B8FC0FCF97CE8 /* EZAudioUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A35278EC113B57059362216EFB43E2 /* EZAudioUtilities.m */; };
-		D6BDEFBF9E38FB97649C7C4524D3B416 /* EZAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D63F8398799907D90FCF35178FB6C /* EZAudio.m */; };
-		D6CC5C0B861196ECD0718FEEFC26ECB8 /* TPCircularBuffer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D10FBA7D81B9893DFC76DD0EF4F3E8 /* TPCircularBuffer.framework */; };
-		D768BC9B4912CC68EE767939247507E7 /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B5653B03A6A1387983F2190A8988C70 /* TPCircularBuffer+AudioBufferList.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D90AA9C653F5C9B8978294044A6925EC /* TPCircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = C24FDEC0B189882F740A0A31A0F1F9D7 /* TPCircularBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBC0D8FEB6A8101C977332E8BC16E641 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC6F9E9167C8E89B24F3BE3D28B581 /* Dimension.swift */; };
-		DF757633A359A5DBFF789803CDF80448 /* EZAudioPlot.h in Headers */ = {isa = PBXBuildFile; fileRef = D177C7731C45DE1581D6F57E16443AE1 /* EZAudioPlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFD990CFAA1B771B342A65145B7C5BC7 /* TPCircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A76170A81D3BA7A7B70717747FA101 /* TPCircularBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E450BAC0211E97FD4F731E134C1E286F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2174B6CCF1B782C01E6365E361C992C3 /* Accelerate.framework */; };
-		EBC259BEC93F867829DA58DAEBC1807F /* EZAudioOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B2127720FE2A90745BC13CF01E2043 /* EZAudioOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED17BE36B07F21CEDD5E468A6299FA05 /* EZRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 77CDF9E58C0D39477D9A1C61E47A6728 /* EZRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDC2F74BE6FE67A5141CE51C9D3BA64D /* EZAudioiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AD95F24A0FD839B0AC1BFCDD1777D6 /* EZAudioiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFBC379468F146CFEA561B3FAB37FE40 /* Pods-AudioLogger-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 429A563660A71DA34EAB4603A3068849 /* Pods-AudioLogger-iOS-dummy.m */; };
-		F9AD8E7CEDB4A9C01521485DF3469C2D /* EZAudioDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = E6ACA91B97A7B14105F4ABBE09F54C98 /* EZAudioDisplayLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC27B916EC313A166CE2704745CB14C0 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = B092F636901CF24517BD39712ACDAD5D /* Coefficients.swift */; };
-		FE0D8651FE598B41615EAC36775CD81D /* EZAudioFloatConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9530FA70EF196564F527BFB627DAD208 /* EZAudioFloatConverter.m */; };
-		FE4D13CA6A4999D13875761E5100C1A0 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8A3901E3990192365EC0AE93B95CA4 /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05C1C6C0B246E3C5FDF06B2A0BB63F0D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D91031647758937F38CF119739BCB4 /* View.swift */; };
+		067B84F7E9EFBEAFDC824931CAAD2051 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663BDED7ABD452C20FBEBB19E6A702F1 /* Align.swift */; };
+		1431619A2565DD8EAB817240E078707C /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA93680891D230624BD16747A7FDE6 /* LayoutProxy.swift */; };
+		22B60CFF6E57EB6DF8CCA5D2CAC3178C /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB657FB58C55204921EA7AB07BD63A /* Priority.swift */; };
+		24EF682ACFF8F1CEA8BDDAA340220AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8814508258D11E63467099BB0919FA4D /* Foundation.framework */; };
+		2A07DA74AE761678ACBEBD1E23855935 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8814508258D11E63467099BB0919FA4D /* Foundation.framework */; };
+		3CA140D91866C41F4970E819AE58F6FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8814508258D11E63467099BB0919FA4D /* Foundation.framework */; };
+		3F2391D80C5AE124D6E13AD3FABFFE01 /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE16F6FC55A0EF7D9A8B32899F3146D5 /* Constrain.swift */; };
+		411296BE807A2972A3FDFF5D3A9BA351 /* JPSVolumeButtonHandler-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9DE0C2CB3C3951E91BCB5DE9D8035D3 /* JPSVolumeButtonHandler-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56EBA0C77344F63CA6A36265A6496A71 /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD2544536E07BDBDAD4994B66C2DB5C /* LayoutSupport.swift */; };
+		5CAA19E0EB7CA9EB6047A3E43EC1FC8F /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0818710704B62FAC03B2A0377852BBE5 /* ConstraintGroup.swift */; };
+		5F5D3FB5718F4673DC293DA7D97EF046 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370C8443FCD31158945F549F93340BB4 /* Compound.swift */; };
+		66D2D0BAD7D7C5574E894DED6521825A /* JPSVolumeButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DCD924295A2410034C2A89CC7B5E53D /* JPSVolumeButtonHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		697414FCC3C6F8176768FFDDEC73A108 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56256863901D075F3F6312669C40FC9 /* Expression.swift */; };
+		6BE91DDECCD7415E19090617DEFD0B0A /* JPSVolumeButtonHandler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4138FD099968C6B2B1A7BAE18C4330EC /* JPSVolumeButtonHandler-dummy.m */; };
+		74BD0664EEC77366D314DA22DD4E721F /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3682A55A72998D9C3254964B41C780 /* Size.swift */; };
+		7965A04590F67375EC65249F774B3F6B /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F578ABC288950BDF495CF7B03AFA6705 /* Distribute.swift */; };
+		8233B970DF692F0992BF413CC80E0F78 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2489FF4AE3997E72FF93FF763CB10C6B /* AVFoundation.framework */; };
+		88B21B225B2D6BFAB3F50B88495299F1 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82D83710EC719B535D2F27D033181AD /* Point.swift */; };
+		9B71D4856DF9CFE5715EDF4E5B3B2844 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD30CE8A213792DADAB2D4C664A6C60 /* ViewUtils.swift */; };
+		9C7E8D85506FA06C506A330B200FCEE7 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F45D7C4CCC31328D19BBFFA2E96C41F /* Context.swift */; };
+		A084DDD7233A950676D60FCB4FA8BE74 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7A5B87570BEFE24D123AA8377DEA9 /* Edges.swift */; };
+		A09E8A7A11837B71CB950524E184440D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B31D572498265F16CE3292E541D77F4 /* MediaPlayer.framework */; };
+		A67286FF819C5C943D027E9C40DF456D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E4F92E063351B83D1FD244C3769CEA /* Extensions.swift */; };
+		A7BD4B74A484170A23FF6C7611A11B40 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA7092399960D1219C1ECE15A4389 /* Property.swift */; };
+		AE0D108936772D2424A68AC86B44DA3F /* JPSVolumeButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF08D8C421C935F60D7AA6431ED7666 /* JPSVolumeButtonHandler.m */; };
+		AE7ACD648B84D1C8645049118FE42D54 /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6511A0B00AF76BBAEC4CB146B019086A /* Cartography-dummy.m */; };
+		B4588DF9CB27063247E91FAB360C5BAF /* Pods-AudioLogger-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 429A563660A71DA34EAB4603A3068849 /* Pods-AudioLogger-iOS-dummy.m */; };
+		C2E2993258D9072061A389E518053F8B /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36F070878909C19B8A29E91E1BB895E /* Constraint.swift */; };
+		CD587D5E28B0428E3B4163F1604D26BF /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C2197FCBA18D3366B844AF80ED0A0 /* Edge.swift */; };
+		DBC0D8FEB6A8101C977332E8BC16E641 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBAC801A14A715DC705A90F869671EA /* Dimension.swift */; };
+		F59F325664626AE456D4C9415B743915 /* Pods-AudioLogger-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A4D25A289280F8D5CBAFF4F198F683 /* Pods-AudioLogger-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC27B916EC313A166CE2704745CB14C0 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5338D01D00CD476703494284F43157 /* Coefficients.swift */; };
+		FE4D13CA6A4999D13875761E5100C1A0 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3250BF18031D30C9EFF2011EDD3940D /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8B07F04F586BBFBF57420F6814C37E50 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B42A1C563331D6A5A52594827651E956;
-			remoteInfo = TPCircularBuffer;
-		};
-		8B8CB70FD30B629F9AB07F56635FAF98 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B42A1C563331D6A5A52594827651E956;
-			remoteInfo = TPCircularBuffer;
-		};
-		8BC4187761D9413E68E8E76B7C2B7E50 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 49442B834B6726B7A1387CC4B226F143;
-			remoteInfo = JPSVolumeButtonHandler;
-		};
-		AC4A8A2431E51EBB915A810B6118772B /* PBXContainerItemProxy */ = {
+		650A8E845D1C455DAE06E6031FA86CEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 544212980401A6DA7806F65EAD8C6637;
 			remoteInfo = Cartography;
 		};
-		D055B58905E97948691D8BB50CB8EC8D /* PBXContainerItemProxy */ = {
+		CC29F32E90DF66C49D824AD32CCDBE84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 68E504159A95438F18EAACAB7BBD121C;
-			remoteInfo = EZAudio;
+			remoteGlobalIDString = 49442B834B6726B7A1387CC4B226F143;
+			remoteInfo = JPSVolumeButtonHandler;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00BA21D6996FD4A0FE6A12E084DBA4BA /* EZAudioFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioFile.m; path = EZAudio/EZAudioFile.m; sourceTree = "<group>"; };
-		0297CC6DD7AFA1BDCA4A6C05BA54C220 /* EZAudio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EZAudio-dummy.m"; sourceTree = "<group>"; };
-		03B2127720FE2A90745BC13CF01E2043 /* EZAudioOSX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioOSX.h; path = EZAudio/EZAudioOSX.h; sourceTree = "<group>"; };
-		04D90EC1737952CE9562586261D20D03 /* EZAudioUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioUtilities.h; path = EZAudio/EZAudioUtilities.h; sourceTree = "<group>"; };
-		05B036FD6E200CDC94D83740DA6A6453 /* EZOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZOutput.h; path = EZAudio/EZOutput.h; sourceTree = "<group>"; };
-		064A44EF287F68F66884489F95E094F8 /* JPSVolumeButtonHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JPSVolumeButtonHandler.framework; path = JPSVolumeButtonHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07E7AE9BDE3822C65DCF42BA1ED0EB7B /* EZAudioDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDevice.h; path = EZAudio/EZAudioDevice.h; sourceTree = "<group>"; };
-		0E555E0D46CC0984A3F04791C11E84E7 /* JPSVolumeButtonHandler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JPSVolumeButtonHandler-dummy.m"; sourceTree = "<group>"; };
-		0FE5E0DB6BCC450AD41CF98E9E716161 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
-		171676266E68F82EFD4F8AF6415E6766 /* EZRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRecorder.m; path = EZAudio/EZRecorder.m; sourceTree = "<group>"; };
-		1BB70409EAE99986767021966147AE02 /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
-		2174B6CCF1B782C01E6365E361C992C3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		0818710704B62FAC03B2A0377852BBE5 /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
+		13AECA8523D26B036B9B13223856CBEB /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
+		140054A870D5C3C5473684C01DEA0E9F /* JPSVolumeButtonHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JPSVolumeButtonHandler.framework; path = JPSVolumeButtonHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A7A5B87570BEFE24D123AA8377DEA9 /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
+		1BD2544536E07BDBDAD4994B66C2DB5C /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
+		1F45D7C4CCC31328D19BBFFA2E96C41F /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
+		1FD30CE8A213792DADAB2D4C664A6C60 /* ViewUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Cartography/ViewUtils.swift; sourceTree = "<group>"; };
 		22D95831489491B5B4857A36C0960D2B /* Pods-AudioLogger-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioLogger-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		27A35278EC113B57059362216EFB43E2 /* EZAudioUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioUtilities.m; path = EZAudio/EZAudioUtilities.m; sourceTree = "<group>"; };
-		29371A90668B3E9F4B6B9D0D48636871 /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
-		2B0669B6E88B6F0A3BF6535269F63D56 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
-		2B5DBEF51C0F00BC876F58FF833A47D4 /* JPSVolumeButtonHandler-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-umbrella.h"; sourceTree = "<group>"; };
-		2C0FAF4C7822A71C29E0B5E640CC4DED /* EZAudioFFT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFFT.h; path = EZAudio/EZAudioFFT.h; sourceTree = "<group>"; };
-		2E9D63F8398799907D90FCF35178FB6C /* EZAudio.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudio.m; path = EZAudio/EZAudio.m; sourceTree = "<group>"; };
-		315643E3A196753CC46CA6572345CDC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		332DB362D38620F67421AF602378C1E2 /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPSVolumeButtonHandler.m; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.m; sourceTree = "<group>"; };
-		338495D9BC6C6025D3DD50DC1B57ECDC /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
-		37BAAA062CF35B3DB06832F3F76323AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		390CF312ECD7AE8A940E1553353D68C2 /* EZAudioPlotGL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioPlotGL.m; path = EZAudio/EZAudioPlotGL.m; sourceTree = "<group>"; };
-		39BC7314DF78A82D8A5162FE0AC141C3 /* EZAudio-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EZAudio-umbrella.h"; sourceTree = "<group>"; };
-		3B40F61B4BFDB5765BA7225601CFD92E /* EZMicrophone.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZMicrophone.m; path = EZAudio/EZMicrophone.m; sourceTree = "<group>"; };
+		2489FF4AE3997E72FF93FF763CB10C6B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		370C8443FCD31158945F549F93340BB4 /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
+		4138FD099968C6B2B1A7BAE18C4330EC /* JPSVolumeButtonHandler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JPSVolumeButtonHandler-dummy.m"; sourceTree = "<group>"; };
 		429A563660A71DA34EAB4603A3068849 /* Pods-AudioLogger-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioLogger-iOS-dummy.m"; sourceTree = "<group>"; };
-		430CA95A4C53ECD6CC357705EF73912E /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
-		44E5BFC4C515F6990AE3D3125FA87FC8 /* TPCircularBuffer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPCircularBuffer-dummy.m"; sourceTree = "<group>"; };
-		473912D0DA9571339A13D4A9D7D3AE06 /* JPSVolumeButtonHandler.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JPSVolumeButtonHandler.modulemap; sourceTree = "<group>"; };
-		47448F110158B7853729A61AE7D57018 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
-		488469845FC23A20107B5487A57BDADF /* JPSVolumeButtonHandler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JPSVolumeButtonHandler.xcconfig; sourceTree = "<group>"; };
-		4A1D0A0868A0FB8D62B91E7038BAD42B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		4AEA3BDC6297BA26BA7D76A3D25CD526 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CF59A7022F8A4A5CBC59BC62D5EAD2A /* EZAudioDisplayLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioDisplayLink.m; path = EZAudio/EZAudioDisplayLink.m; sourceTree = "<group>"; };
-		51F22F7311991622F0C696E628103411 /* EZAudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EZAudio.framework; path = EZAudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		545E820B4D3D77987A112AFDA9A005C1 /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
-		599FAABB4BD02FD838EBB89DC26BEC12 /* EZAudioPlotGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlotGL.h; path = EZAudio/EZAudioPlotGL.h; sourceTree = "<group>"; };
+		4DCD924295A2410034C2A89CC7B5E53D /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPSVolumeButtonHandler.h; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
+		53FBA61135A4E92EC4428602FE753F24 /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
 		5BDF92614360DAB6BD1D038881BE84F6 /* Pods-AudioLogger-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioLogger-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		5E12C012202726B86D9AB8DEB68299D2 /* Pods-AudioLogger-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioLogger-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		65AA16F015D552C4EA7F57FE538FFA5E /* EZAudio.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EZAudio.xcconfig; sourceTree = "<group>"; };
-		66162C86D661018B88C5E607D6CF41C2 /* EZAudioFloatConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatConverter.h; path = EZAudio/EZAudioFloatConverter.h; sourceTree = "<group>"; };
-		6B5653B03A6A1387983F2190A8988C70 /* TPCircularBuffer+AudioBufferList.c */ = {isa = PBXFileReference; includeInIndex = 1; path = "TPCircularBuffer+AudioBufferList.c"; sourceTree = "<group>"; };
-		6BEF9C7501CBE3BA48BE7EA53FC00E8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C5065498589AF3720108E6619DAFEED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CB8E9F5D5E90987D020AAE01D6EA8B8 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
-		71A76170A81D3BA7A7B70717747FA101 /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
-		75AD95F24A0FD839B0AC1BFCDD1777D6 /* EZAudioiOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioiOS.h; path = EZAudio/EZAudioiOS.h; sourceTree = "<group>"; };
-		76D10FBA7D81B9893DFC76DD0EF4F3E8 /* TPCircularBuffer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPCircularBuffer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77CDF9E58C0D39477D9A1C61E47A6728 /* EZRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRecorder.h; path = EZAudio/EZRecorder.h; sourceTree = "<group>"; };
+		6511A0B00AF76BBAEC4CB146B019086A /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
+		663BDED7ABD452C20FBEBB19E6A702F1 /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
+		71E4F92E063351B83D1FD244C3769CEA /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
+		799ACFCD0726EDE04234BE14BA60A406 /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cartography.modulemap; sourceTree = "<group>"; };
 		79A4D25A289280F8D5CBAFF4F198F683 /* Pods-AudioLogger-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AudioLogger-iOS-umbrella.h"; sourceTree = "<group>"; };
-		7B393108985EC8B7E4E18E63CB7E31EB /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
-		7C0C030D64F12C9AA7BF7D019EF2650F /* EZAudioPlot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioPlot.m; path = EZAudio/EZAudioPlot.m; sourceTree = "<group>"; };
-		7CCFB1621F0C290DE98BA4DFD826BBF6 /* EZAudioFFT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioFFT.m; path = EZAudio/EZAudioFFT.m; sourceTree = "<group>"; };
-		807F8612D205573E7A5F1891FAD34DCA /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPSVolumeButtonHandler.h; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
-		81476A9AC1A000032DC6CE5D573D2A10 /* EZPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZPlot.h; path = EZAudio/EZPlot.h; sourceTree = "<group>"; };
-		852DA7D83960817A9E472321DDBC676B /* EZAudioDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioDevice.m; path = EZAudio/EZAudioDevice.m; sourceTree = "<group>"; };
-		85DD8022B722A6703E1E10587F92A93D /* TPCircularBuffer.c */ = {isa = PBXFileReference; includeInIndex = 1; path = TPCircularBuffer.c; sourceTree = "<group>"; };
-		886072BE427E016971E58F4F29EE13DA /* TPCircularBuffer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer-umbrella.h"; sourceTree = "<group>"; };
-		8BB409B930A5F6F739F2D21DFB0A95F3 /* EZAudio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudio.h; path = EZAudio/EZAudio.h; sourceTree = "<group>"; };
-		8F69592E31CED8912B5F06A09A751DEC /* JPSVolumeButtonHandler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-prefix.pch"; sourceTree = "<group>"; };
-		90817D2036474E10427321900749055C /* TPCircularBuffer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer-prefix.pch"; sourceTree = "<group>"; };
-		90AE64D5106EEEA6B060B6CA09C92B57 /* EZOutput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZOutput.m; path = EZAudio/EZOutput.m; sourceTree = "<group>"; };
+		8814508258D11E63467099BB0919FA4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8D3682A55A72998D9C3254964B41C780 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
 		91815950EDE051968520ED9CD4868994 /* Pods-AudioLogger-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioLogger-iOS-resources.sh"; sourceTree = "<group>"; };
-		932ECD1C5E7164DD017F4D08B08E9FCC /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cartography.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9530FA70EF196564F527BFB627DAD208 /* EZAudioFloatConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioFloatConverter.m; path = EZAudio/EZAudioFloatConverter.m; sourceTree = "<group>"; };
-		99A7373D997FD2307586545D6B0FA784 /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
-		9E994A7EF38C9243BB2E8D7F16913CFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9578205B63D2181D15110B0DDC6D7853 /* Pods_AudioLogger_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AudioLogger_iOS.framework; path = "Pods-AudioLogger-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E35077553011FBA0333BB42F5E864D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B31D572498265F16CE3292E541D77F4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		A104B7A28073C30D30A845753B8B6CB3 /* Pods-AudioLogger-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioLogger-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A11DA7092399960D1219C1ECE15A4389 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
 		A2161E78A67C8CE04797DC7E69B8D261 /* Pods-AudioLogger-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AudioLogger-iOS.modulemap"; sourceTree = "<group>"; };
-		A468894115787F8DFDF4F59B79D27CA8 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
-		A4E0E3FC32345C73B6A29224A9B94AAD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		A90DE9A429FC702BDF65F98CC6EC900D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
-		AB6B46320D66AABCB3912CF66A42C66E /* EZAudioFloatData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatData.h; path = EZAudio/EZAudioFloatData.h; sourceTree = "<group>"; };
-		AC4A628A48DA1C7D393160671CC39D27 /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
-		ADF5F4363EEC89A23B49C5A400C925CF /* TPCircularBuffer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPCircularBuffer.xcconfig; sourceTree = "<group>"; };
-		AF24606852258B5550DE8F4EEDD8D4F2 /* EZAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlayer.h; path = EZAudio/EZAudioPlayer.h; sourceTree = "<group>"; };
-		B092F636901CF24517BD39712ACDAD5D /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
-		B0946F5D107C5ED552DF3B33FA7993A3 /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
-		B3193D1FF3CDEFB233CB00E4AC7971E4 /* TPCircularBuffer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TPCircularBuffer.modulemap; sourceTree = "<group>"; };
-		B630C66B24F00DB5DCC6C55C6CFEFC12 /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
-		B634981FE8CBD201C9F2F4172F365380 /* EZAudioPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioPlayer.m; path = EZAudio/EZAudioPlayer.m; sourceTree = "<group>"; };
+		A9DE0C2CB3C3951E91BCB5DE9D8035D3 /* JPSVolumeButtonHandler-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-umbrella.h"; sourceTree = "<group>"; };
+		AE5338D01D00CD476703494284F43157 /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
+		B22E0EEA1640323A21EDD301C03BCFD6 /* JPSVolumeButtonHandler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-prefix.pch"; sourceTree = "<group>"; };
+		B31A0FBA514D3BAA4D7BFA3A7052B08E /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cartography.framework; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3250BF18031D30C9EFF2011EDD3940D /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
+		B36F070878909C19B8A29E91E1BB895E /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
+		B46910DEAB5C687F2F3DA92CE3054B37 /* JPSVolumeButtonHandler.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JPSVolumeButtonHandler.modulemap; sourceTree = "<group>"; };
+		B50C2197FCBA18D3366B844AF80ED0A0 /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
 		B674452E201B14DA07A260534EF07ECC /* Pods-AudioLogger-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioLogger-iOS-frameworks.sh"; sourceTree = "<group>"; };
-		BF31EEDFE2378905379FFF02E186D4DF /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
-		C02B2659D1E337210C0AE73DB3D01ADB /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
-		C24FDEC0B189882F740A0A31A0F1F9D7 /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = EZAudio/TPCircularBuffer.h; sourceTree = "<group>"; };
-		C8E7187993D4D0B48870F16D5BC621F1 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
-		C9DC6A2795DFBF7337597716B5B1C30F /* ViewUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Cartography/ViewUtils.swift; sourceTree = "<group>"; };
-		CC153B21969B4CCA717C55BC721D0FCD /* Pods_AudioLogger_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AudioLogger_iOS.framework; path = "Pods-AudioLogger-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D177C7731C45DE1581D6F57E16443AE1 /* EZAudioPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlot.h; path = EZAudio/EZAudioPlot.h; sourceTree = "<group>"; };
-		D36CE0667177198230F5356900525680 /* TPCircularBuffer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPCircularBuffer.framework; path = TPCircularBuffer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8D06CC7229EB9750550629F157CC716 /* EZAudioFloatData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioFloatData.m; path = EZAudio/EZAudioFloatData.m; sourceTree = "<group>"; };
-		DA425FE125F43CB6485A5CBBE7B533DA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
-		DE39ABF93C0BA9E26D9EF976B4960F90 /* EZAudio-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EZAudio-prefix.pch"; sourceTree = "<group>"; };
-		DF9313E186D68D8634A110831B9CEE2D /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
-		E0F0FFAE2C825B4AE21917405936C6C9 /* EZAudio.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAudio.modulemap; sourceTree = "<group>"; };
-		E51E9DFE4FBF84E92C99EAD7D58F298D /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
-		E6ACA91B97A7B14105F4ABBE09F54C98 /* EZAudioDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDisplayLink.h; path = EZAudio/EZAudioDisplayLink.h; sourceTree = "<group>"; };
-		E88EBBD7A2882667E34A1150216B2696 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cartography.framework; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED8A3901E3990192365EC0AE93B95CA4 /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
-		ED8B0462A01FC6FF1F16BD3E3C5E73C4 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
-		F8F794BAFC28727AD8C28F21576B6863 /* EZPlot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZPlot.m; path = EZAudio/EZPlot.m; sourceTree = "<group>"; };
-		FBFC6F9E9167C8E89B24F3BE3D28B581 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
-		FC8537A7AF4154C3DA78BD4395679417 /* EZMicrophone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZMicrophone.h; path = EZAudio/EZMicrophone.h; sourceTree = "<group>"; };
-		FCA5CC7B96993730505A1D42EAF6959B /* TPCircularBuffer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = TPCircularBuffer.c; path = EZAudio/TPCircularBuffer.c; sourceTree = "<group>"; };
-		FE12A377AF51DB1131093E9B8F727B7B /* EZAudioFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFile.h; path = EZAudio/EZAudioFile.h; sourceTree = "<group>"; };
-		FFE131145D0DCD18AD9512EFD02BB1BA /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
+		BE16F6FC55A0EF7D9A8B32899F3146D5 /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
+		C3CE707CF823DD10A365C9AEBD12731A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D69FC4FD787F7E68E5D19A55B908784B /* JPSVolumeButtonHandler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JPSVolumeButtonHandler.xcconfig; sourceTree = "<group>"; };
+		E6BB657FB58C55204921EA7AB07BD63A /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
+		F3EA93680891D230624BD16747A7FDE6 /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
+		F56256863901D075F3F6312669C40FC9 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
+		F578ABC288950BDF495CF7B03AFA6705 /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
+		F82D83710EC719B535D2F27D033181AD /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
+		F8D91031647758937F38CF119739BCB4 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
+		FCBAC801A14A715DC705A90F869671EA /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		FCF08D8C421C935F60D7AA6431ED7666 /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPSVolumeButtonHandler.m; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3C14197EFD066B3A81222F9D4CB540CA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BB8566A0691DDAB69C67923A9E0DBD4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3E009CDC0435C90150F3422345907A02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,153 +134,82 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A05EC7805DA3B182DF5CC11EBF269BFC /* Frameworks */ = {
+		B29204A2B40C64057AE71678FB6B67CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E450BAC0211E97FD4F731E134C1E286F /* Accelerate.framework in Frameworks */,
-				6541F0D17CEB6B3957649E220612C2EF /* AudioToolbox.framework in Frameworks */,
-				825877E4C307FC88F7B99A3C0E5FFEC2 /* AVFoundation.framework in Frameworks */,
-				8F6662FEFB048F86B48A02D8707E202B /* Foundation.framework in Frameworks */,
-				B65335AD1D90F007179B36CEB8EDF502 /* GLKit.framework in Frameworks */,
-				D6CC5C0B861196ECD0718FEEFC26ECB8 /* TPCircularBuffer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C298540FC2716969507466D30155C661 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DC1EFBEC0AD9DDD55D4B06348E679A2 /* AudioToolbox.framework in Frameworks */,
-				90600B1223C5616C07413C4C87CC24B0 /* Foundation.framework in Frameworks */,
+				3CA140D91866C41F4970E819AE58F6FD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09E9D94BDE6A66061FF77B76ED89931C /* iOS */ = {
+		0A4C8F320EFEDC7CF60724C77BF50C55 /* Cartography */ = {
 			isa = PBXGroup;
 			children = (
-				2174B6CCF1B782C01E6365E361C992C3 /* Accelerate.framework */,
-				A4E0E3FC32345C73B6A29224A9B94AAD /* AudioToolbox.framework */,
-				4A1D0A0868A0FB8D62B91E7038BAD42B /* AVFoundation.framework */,
-				9E994A7EF38C9243BB2E8D7F16913CFD /* Foundation.framework */,
-				A90DE9A429FC702BDF65F98CC6EC900D /* GLKit.framework */,
-				DA425FE125F43CB6485A5CBBE7B533DA /* MediaPlayer.framework */,
+				663BDED7ABD452C20FBEBB19E6A702F1 /* Align.swift */,
+				AE5338D01D00CD476703494284F43157 /* Coefficients.swift */,
+				370C8443FCD31158945F549F93340BB4 /* Compound.swift */,
+				BE16F6FC55A0EF7D9A8B32899F3146D5 /* Constrain.swift */,
+				B36F070878909C19B8A29E91E1BB895E /* Constraint.swift */,
+				0818710704B62FAC03B2A0377852BBE5 /* ConstraintGroup.swift */,
+				1F45D7C4CCC31328D19BBFFA2E96C41F /* Context.swift */,
+				FCBAC801A14A715DC705A90F869671EA /* Dimension.swift */,
+				F578ABC288950BDF495CF7B03AFA6705 /* Distribute.swift */,
+				B50C2197FCBA18D3366B844AF80ED0A0 /* Edge.swift */,
+				18A7A5B87570BEFE24D123AA8377DEA9 /* Edges.swift */,
+				F56256863901D075F3F6312669C40FC9 /* Expression.swift */,
+				71E4F92E063351B83D1FD244C3769CEA /* Extensions.swift */,
+				F3EA93680891D230624BD16747A7FDE6 /* LayoutProxy.swift */,
+				1BD2544536E07BDBDAD4994B66C2DB5C /* LayoutSupport.swift */,
+				F82D83710EC719B535D2F27D033181AD /* Point.swift */,
+				E6BB657FB58C55204921EA7AB07BD63A /* Priority.swift */,
+				A11DA7092399960D1219C1ECE15A4389 /* Property.swift */,
+				8D3682A55A72998D9C3254964B41C780 /* Size.swift */,
+				F8D91031647758937F38CF119739BCB4 /* View.swift */,
+				1FD30CE8A213792DADAB2D4C664A6C60 /* ViewUtils.swift */,
+				FEF70921E792CAEF88F49EE77457EC4E /* Support Files */,
 			);
-			name = iOS;
+			name = Cartography;
+			path = Cartography;
 			sourceTree = "<group>";
 		};
-		1DF7E5BFF5B0F3AA060649CF410BCE28 /* Support Files */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				932ECD1C5E7164DD017F4D08B08E9FCC /* Cartography.modulemap */,
-				7B393108985EC8B7E4E18E63CB7E31EB /* Cartography.xcconfig */,
-				B630C66B24F00DB5DCC6C55C6CFEFC12 /* Cartography-dummy.m */,
-				AC4A628A48DA1C7D393160671CC39D27 /* Cartography-prefix.pch */,
-				ED8A3901E3990192365EC0AE93B95CA4 /* Cartography-umbrella.h */,
-				6BEF9C7501CBE3BA48BE7EA53FC00E8C /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Cartography";
-			sourceTree = "<group>";
-		};
-		1F28A64F6BE4F0BF5D17B332E7ADAA77 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				76D10FBA7D81B9893DFC76DD0EF4F3E8 /* TPCircularBuffer.framework */,
-				09E9D94BDE6A66061FF77B76ED89931C /* iOS */,
+				45F508B82618BB1608B353CE54D8C3F9 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2C82B200E5BA38295A855E3A796B3482 /* Pods */ = {
+		239CB9E408FC75BB5AF9EFD630585174 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B4B58FFE592ABC81958628F5FCF4E29D /* Cartography */,
-				C5E2AE13750010A863B3477717466CB5 /* EZAudio */,
-				454BEF843E09129ACABF400D07D94137 /* JPSVolumeButtonHandler */,
-				3415A8C36BF43AF8F27343C3818CF1FE /* TPCircularBuffer */,
+				0A4C8F320EFEDC7CF60724C77BF50C55 /* Cartography */,
+				CA49D98A82E81A3AE3266628572158BA /* JPSVolumeButtonHandler */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3415A8C36BF43AF8F27343C3818CF1FE /* TPCircularBuffer */ = {
+		406A81673D055E42DD8FCAFA873B79B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85DD8022B722A6703E1E10587F92A93D /* TPCircularBuffer.c */,
-				71A76170A81D3BA7A7B70717747FA101 /* TPCircularBuffer.h */,
-				6B5653B03A6A1387983F2190A8988C70 /* TPCircularBuffer+AudioBufferList.c */,
-				0FE5E0DB6BCC450AD41CF98E9E716161 /* TPCircularBuffer+AudioBufferList.h */,
-				7BD26DB55F21434AFE63CEAB603E1747 /* Support Files */,
-			);
-			name = TPCircularBuffer;
-			path = TPCircularBuffer;
-			sourceTree = "<group>";
-		};
-		37BBF6F1FEA9B1E1D311EEE317FE7ADE /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				8BB409B930A5F6F739F2D21DFB0A95F3 /* EZAudio.h */,
-				2E9D63F8398799907D90FCF35178FB6C /* EZAudio.m */,
-				07E7AE9BDE3822C65DCF42BA1ED0EB7B /* EZAudioDevice.h */,
-				852DA7D83960817A9E472321DDBC676B /* EZAudioDevice.m */,
-				E6ACA91B97A7B14105F4ABBE09F54C98 /* EZAudioDisplayLink.h */,
-				4CF59A7022F8A4A5CBC59BC62D5EAD2A /* EZAudioDisplayLink.m */,
-				2C0FAF4C7822A71C29E0B5E640CC4DED /* EZAudioFFT.h */,
-				7CCFB1621F0C290DE98BA4DFD826BBF6 /* EZAudioFFT.m */,
-				FE12A377AF51DB1131093E9B8F727B7B /* EZAudioFile.h */,
-				00BA21D6996FD4A0FE6A12E084DBA4BA /* EZAudioFile.m */,
-				66162C86D661018B88C5E607D6CF41C2 /* EZAudioFloatConverter.h */,
-				9530FA70EF196564F527BFB627DAD208 /* EZAudioFloatConverter.m */,
-				AB6B46320D66AABCB3912CF66A42C66E /* EZAudioFloatData.h */,
-				D8D06CC7229EB9750550629F157CC716 /* EZAudioFloatData.m */,
-				75AD95F24A0FD839B0AC1BFCDD1777D6 /* EZAudioiOS.h */,
-				03B2127720FE2A90745BC13CF01E2043 /* EZAudioOSX.h */,
-				AF24606852258B5550DE8F4EEDD8D4F2 /* EZAudioPlayer.h */,
-				B634981FE8CBD201C9F2F4172F365380 /* EZAudioPlayer.m */,
-				D177C7731C45DE1581D6F57E16443AE1 /* EZAudioPlot.h */,
-				7C0C030D64F12C9AA7BF7D019EF2650F /* EZAudioPlot.m */,
-				599FAABB4BD02FD838EBB89DC26BEC12 /* EZAudioPlotGL.h */,
-				390CF312ECD7AE8A940E1553353D68C2 /* EZAudioPlotGL.m */,
-				04D90EC1737952CE9562586261D20D03 /* EZAudioUtilities.h */,
-				27A35278EC113B57059362216EFB43E2 /* EZAudioUtilities.m */,
-				FC8537A7AF4154C3DA78BD4395679417 /* EZMicrophone.h */,
-				3B40F61B4BFDB5765BA7225601CFD92E /* EZMicrophone.m */,
-				05B036FD6E200CDC94D83740DA6A6453 /* EZOutput.h */,
-				90AE64D5106EEEA6B060B6CA09C92B57 /* EZOutput.m */,
-				81476A9AC1A000032DC6CE5D573D2A10 /* EZPlot.h */,
-				F8F794BAFC28727AD8C28F21576B6863 /* EZPlot.m */,
-				77CDF9E58C0D39477D9A1C61E47A6728 /* EZRecorder.h */,
-				171676266E68F82EFD4F8AF6415E6766 /* EZRecorder.m */,
-				FCA5CC7B96993730505A1D42EAF6959B /* TPCircularBuffer.c */,
-				C24FDEC0B189882F740A0A31A0F1F9D7 /* TPCircularBuffer.h */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		3B6899B1399FBDDF38952FCE7A506B65 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E88EBBD7A2882667E34A1150216B2696 /* Cartography.framework */,
-				51F22F7311991622F0C696E628103411 /* EZAudio.framework */,
-				064A44EF287F68F66884489F95E094F8 /* JPSVolumeButtonHandler.framework */,
-				CC153B21969B4CCA717C55BC721D0FCD /* Pods_AudioLogger_iOS.framework */,
-				D36CE0667177198230F5356900525680 /* TPCircularBuffer.framework */,
+				B31A0FBA514D3BAA4D7BFA3A7052B08E /* Cartography.framework */,
+				140054A870D5C3C5473684C01DEA0E9F /* JPSVolumeButtonHandler.framework */,
+				9578205B63D2181D15110B0DDC6D7853 /* Pods_AudioLogger_iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		454BEF843E09129ACABF400D07D94137 /* JPSVolumeButtonHandler */ = {
+		45F508B82618BB1608B353CE54D8C3F9 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				807F8612D205573E7A5F1891FAD34DCA /* JPSVolumeButtonHandler.h */,
-				332DB362D38620F67421AF602378C1E2 /* JPSVolumeButtonHandler.m */,
-				B50B03DEE7DEC3842A29E9A1716244B0 /* Support Files */,
+				2489FF4AE3997E72FF93FF763CB10C6B /* AVFoundation.framework */,
+				8814508258D11E63467099BB0919FA4D /* Foundation.framework */,
+				9B31D572498265F16CE3292E541D77F4 /* MediaPlayer.framework */,
 			);
-			name = JPSVolumeButtonHandler;
-			path = JPSVolumeButtonHandler;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		558B6E158E8BF24E6AA7EC4AE6A1EA8B /* Targets Support Files */ = {
@@ -426,97 +220,40 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7BD26DB55F21434AFE63CEAB603E1747 /* Support Files */ = {
+		5BD5785805531601A9123145DADBCF00 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6C5065498589AF3720108E6619DAFEED /* Info.plist */,
-				B3193D1FF3CDEFB233CB00E4AC7971E4 /* TPCircularBuffer.modulemap */,
-				ADF5F4363EEC89A23B49C5A400C925CF /* TPCircularBuffer.xcconfig */,
-				44E5BFC4C515F6990AE3D3125FA87FC8 /* TPCircularBuffer-dummy.m */,
-				90817D2036474E10427321900749055C /* TPCircularBuffer-prefix.pch */,
-				886072BE427E016971E58F4F29EE13DA /* TPCircularBuffer-umbrella.h */,
+				C3CE707CF823DD10A365C9AEBD12731A /* Info.plist */,
+				B46910DEAB5C687F2F3DA92CE3054B37 /* JPSVolumeButtonHandler.modulemap */,
+				D69FC4FD787F7E68E5D19A55B908784B /* JPSVolumeButtonHandler.xcconfig */,
+				4138FD099968C6B2B1A7BAE18C4330EC /* JPSVolumeButtonHandler-dummy.m */,
+				B22E0EEA1640323A21EDD301C03BCFD6 /* JPSVolumeButtonHandler-prefix.pch */,
+				A9DE0C2CB3C3951E91BCB5DE9D8035D3 /* JPSVolumeButtonHandler-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/TPCircularBuffer";
+			path = "../Target Support Files/JPSVolumeButtonHandler";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				1F28A64F6BE4F0BF5D17B332E7ADAA77 /* Frameworks */,
-				2C82B200E5BA38295A855E3A796B3482 /* Pods */,
-				3B6899B1399FBDDF38952FCE7A506B65 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				239CB9E408FC75BB5AF9EFD630585174 /* Pods */,
+				406A81673D055E42DD8FCAFA873B79B6 /* Products */,
 				558B6E158E8BF24E6AA7EC4AE6A1EA8B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8DAFC633B74D56F53A0691B8D3AEAAFD /* Support Files */ = {
+		CA49D98A82E81A3AE3266628572158BA /* JPSVolumeButtonHandler */ = {
 			isa = PBXGroup;
 			children = (
-				E0F0FFAE2C825B4AE21917405936C6C9 /* EZAudio.modulemap */,
-				65AA16F015D552C4EA7F57FE538FFA5E /* EZAudio.xcconfig */,
-				0297CC6DD7AFA1BDCA4A6C05BA54C220 /* EZAudio-dummy.m */,
-				DE39ABF93C0BA9E26D9EF976B4960F90 /* EZAudio-prefix.pch */,
-				39BC7314DF78A82D8A5162FE0AC141C3 /* EZAudio-umbrella.h */,
-				37BAAA062CF35B3DB06832F3F76323AF /* Info.plist */,
+				4DCD924295A2410034C2A89CC7B5E53D /* JPSVolumeButtonHandler.h */,
+				FCF08D8C421C935F60D7AA6431ED7666 /* JPSVolumeButtonHandler.m */,
+				5BD5785805531601A9123145DADBCF00 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/EZAudio";
-			sourceTree = "<group>";
-		};
-		B4B58FFE592ABC81958628F5FCF4E29D /* Cartography */ = {
-			isa = PBXGroup;
-			children = (
-				C02B2659D1E337210C0AE73DB3D01ADB /* Align.swift */,
-				B092F636901CF24517BD39712ACDAD5D /* Coefficients.swift */,
-				29371A90668B3E9F4B6B9D0D48636871 /* Compound.swift */,
-				338495D9BC6C6025D3DD50DC1B57ECDC /* Constrain.swift */,
-				DF9313E186D68D8634A110831B9CEE2D /* Constraint.swift */,
-				FFE131145D0DCD18AD9512EFD02BB1BA /* ConstraintGroup.swift */,
-				2B0669B6E88B6F0A3BF6535269F63D56 /* Context.swift */,
-				FBFC6F9E9167C8E89B24F3BE3D28B581 /* Dimension.swift */,
-				99A7373D997FD2307586545D6B0FA784 /* Distribute.swift */,
-				1BB70409EAE99986767021966147AE02 /* Edge.swift */,
-				545E820B4D3D77987A112AFDA9A005C1 /* Edges.swift */,
-				BF31EEDFE2378905379FFF02E186D4DF /* Expression.swift */,
-				A468894115787F8DFDF4F59B79D27CA8 /* Extensions.swift */,
-				430CA95A4C53ECD6CC357705EF73912E /* LayoutProxy.swift */,
-				B0946F5D107C5ED552DF3B33FA7993A3 /* LayoutSupport.swift */,
-				6CB8E9F5D5E90987D020AAE01D6EA8B8 /* Point.swift */,
-				E51E9DFE4FBF84E92C99EAD7D58F298D /* Priority.swift */,
-				47448F110158B7853729A61AE7D57018 /* Property.swift */,
-				ED8B0462A01FC6FF1F16BD3E3C5E73C4 /* Size.swift */,
-				C8E7187993D4D0B48870F16D5BC621F1 /* View.swift */,
-				C9DC6A2795DFBF7337597716B5B1C30F /* ViewUtils.swift */,
-				1DF7E5BFF5B0F3AA060649CF410BCE28 /* Support Files */,
-			);
-			name = Cartography;
-			path = Cartography;
-			sourceTree = "<group>";
-		};
-		B50B03DEE7DEC3842A29E9A1716244B0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				315643E3A196753CC46CA6572345CDC4 /* Info.plist */,
-				473912D0DA9571339A13D4A9D7D3AE06 /* JPSVolumeButtonHandler.modulemap */,
-				488469845FC23A20107B5487A57BDADF /* JPSVolumeButtonHandler.xcconfig */,
-				0E555E0D46CC0984A3F04791C11E84E7 /* JPSVolumeButtonHandler-dummy.m */,
-				8F69592E31CED8912B5F06A09A751DEC /* JPSVolumeButtonHandler-prefix.pch */,
-				2B5DBEF51C0F00BC876F58FF833A47D4 /* JPSVolumeButtonHandler-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JPSVolumeButtonHandler";
-			sourceTree = "<group>";
-		};
-		C5E2AE13750010A863B3477717466CB5 /* EZAudio */ = {
-			isa = PBXGroup;
-			children = (
-				37BBF6F1FEA9B1E1D311EEE317FE7ADE /* Core */,
-				8DAFC633B74D56F53A0691B8D3AEAAFD /* Support Files */,
-			);
-			name = EZAudio;
-			path = EZAudio;
+			name = JPSVolumeButtonHandler;
+			path = JPSVolumeButtonHandler;
 			sourceTree = "<group>";
 		};
 		F7A5DFF8EE08C96D257EFB8634FD5459 /* Pods-AudioLogger-iOS */ = {
@@ -537,17 +274,23 @@
 			path = "Target Support Files/Pods-AudioLogger-iOS";
 			sourceTree = "<group>";
 		};
+		FEF70921E792CAEF88F49EE77457EC4E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				799ACFCD0726EDE04234BE14BA60A406 /* Cartography.modulemap */,
+				53FBA61135A4E92EC4428602FE753F24 /* Cartography.xcconfig */,
+				6511A0B00AF76BBAEC4CB146B019086A /* Cartography-dummy.m */,
+				13AECA8523D26B036B9B13223856CBEB /* Cartography-prefix.pch */,
+				B3250BF18031D30C9EFF2011EDD3940D /* Cartography-umbrella.h */,
+				95E35077553011FBA0333BB42F5E864D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cartography";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2B0F9240859A4170340A98FE8FE87266 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				046FBF497EF986466E1556C14E0C2961 /* Pods-AudioLogger-iOS-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C014AB2E8A33EA9FB8322FC4C79F43E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -557,39 +300,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E10DD272A57E1449CA678E30E4380FE0 /* Headers */ = {
+		E1D3889AF441B408B62599EA2BE1A7E8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4453CC0C9C63FE6F4D2501B02C389B7F /* EZAudio-umbrella.h in Headers */,
-				400DAFD9B974DBE1038FBB489D277F3B /* EZAudio.h in Headers */,
-				401D39791B5638A5BE06EA9DE85B98CD /* EZAudioDevice.h in Headers */,
-				F9AD8E7CEDB4A9C01521485DF3469C2D /* EZAudioDisplayLink.h in Headers */,
-				4732F092C9EF80D356DF6D7D4B7E4F45 /* EZAudioFFT.h in Headers */,
-				3B24EF46D69198023388B4453E82FBA6 /* EZAudioFile.h in Headers */,
-				30293659ADB66897954F1E65B3D01858 /* EZAudioFloatConverter.h in Headers */,
-				431D72D6FA2B02791F4951F537C19E27 /* EZAudioFloatData.h in Headers */,
-				EDC2F74BE6FE67A5141CE51C9D3BA64D /* EZAudioiOS.h in Headers */,
-				EBC259BEC93F867829DA58DAEBC1807F /* EZAudioOSX.h in Headers */,
-				0679CBD1CECA9C938E54CB01D22E2268 /* EZAudioPlayer.h in Headers */,
-				DF757633A359A5DBFF789803CDF80448 /* EZAudioPlot.h in Headers */,
-				702ACA6373F6EF0E0AFAD39BCB9FB162 /* EZAudioPlotGL.h in Headers */,
-				67ED04B8A48E5CB3676E0B99E7A3F2B8 /* EZAudioUtilities.h in Headers */,
-				BDBEEE76EEFC2E049F0A2ED8B9419173 /* EZMicrophone.h in Headers */,
-				0B6019E3215CFE64ED539846F5E537A7 /* EZOutput.h in Headers */,
-				5A73F31E8B984567AC6713BE2AB1774F /* EZPlot.h in Headers */,
-				ED17BE36B07F21CEDD5E468A6299FA05 /* EZRecorder.h in Headers */,
-				D90AA9C653F5C9B8978294044A6925EC /* TPCircularBuffer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E32FDF65C17FB465720A06133F9C3AA4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6591C59D9FA2DFCA5DFC3F8A53BCE6FC /* TPCircularBuffer+AudioBufferList.h in Headers */,
-				00DEA145A54A1BCBB20AA300AAE5F4D7 /* TPCircularBuffer-umbrella.h in Headers */,
-				DFD990CFAA1B771B342A65145B7C5BC7 /* TPCircularBuffer.h in Headers */,
+				F59F325664626AE456D4C9415B743915 /* Pods-AudioLogger-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,7 +333,7 @@
 			);
 			name = JPSVolumeButtonHandler;
 			productName = JPSVolumeButtonHandler;
-			productReference = 064A44EF287F68F66884489F95E094F8 /* JPSVolumeButtonHandler.framework */;
+			productReference = 140054A870D5C3C5473684C01DEA0E9F /* JPSVolumeButtonHandler.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		544212980401A6DA7806F65EAD8C6637 /* Cartography */ = {
@@ -635,63 +350,26 @@
 			);
 			name = Cartography;
 			productName = Cartography;
-			productReference = E88EBBD7A2882667E34A1150216B2696 /* Cartography.framework */;
+			productReference = B31A0FBA514D3BAA4D7BFA3A7052B08E /* Cartography.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		68E504159A95438F18EAACAB7BBD121C /* EZAudio */ = {
+		5CC3A5CE3733885FB4F4F0892364A455 /* Pods-AudioLogger-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD8C2B4096626025A2A6C1E20D7AC5DD /* Build configuration list for PBXNativeTarget "EZAudio" */;
+			buildConfigurationList = 1230A5EB27F4128F57157C9119A2F2B9 /* Build configuration list for PBXNativeTarget "Pods-AudioLogger-iOS" */;
 			buildPhases = (
-				EF56B47545E5F8715268B4C50768EA3E /* Sources */,
-				A05EC7805DA3B182DF5CC11EBF269BFC /* Frameworks */,
-				E10DD272A57E1449CA678E30E4380FE0 /* Headers */,
+				95EB39FA5A18557B7B7E1174FA1DD6EB /* Sources */,
+				B29204A2B40C64057AE71678FB6B67CF /* Frameworks */,
+				E1D3889AF441B408B62599EA2BE1A7E8 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				746556AB80847708C18DC96BC91267E3 /* PBXTargetDependency */,
-			);
-			name = EZAudio;
-			productName = EZAudio;
-			productReference = 51F22F7311991622F0C696E628103411 /* EZAudio.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B42A1C563331D6A5A52594827651E956 /* TPCircularBuffer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 16121ABC8953EF6561827B391E4990ED /* Build configuration list for PBXNativeTarget "TPCircularBuffer" */;
-			buildPhases = (
-				5C489D4C6CCB5B08080B9055C35D2649 /* Sources */,
-				C298540FC2716969507466D30155C661 /* Frameworks */,
-				E32FDF65C17FB465720A06133F9C3AA4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TPCircularBuffer;
-			productName = TPCircularBuffer;
-			productReference = D36CE0667177198230F5356900525680 /* TPCircularBuffer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BAD72452EF09FC9F8DC0E37C74261705 /* Pods-AudioLogger-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B149CE68E8A28C95DD72AA952BE0F556 /* Build configuration list for PBXNativeTarget "Pods-AudioLogger-iOS" */;
-			buildPhases = (
-				8CD3BE21F254EFA938CA144A281D4180 /* Sources */,
-				3C14197EFD066B3A81222F9D4CB540CA /* Frameworks */,
-				2B0F9240859A4170340A98FE8FE87266 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9840DDB4A8B7249DCAD6E35C375CB0E4 /* PBXTargetDependency */,
-				2A6F2A328BF370F6BB8EB018E02A708E /* PBXTargetDependency */,
-				6B8B275E7911C5953235F47000929022 /* PBXTargetDependency */,
-				0FED6D118D781C18D551E4EE43DB33E8 /* PBXTargetDependency */,
+				A83E65DDBEE68DC73711BF76BF71B471 /* PBXTargetDependency */,
+				12D0A7F2EDC63ABD9C934E23EEEF9A24 /* PBXTargetDependency */,
 			);
 			name = "Pods-AudioLogger-iOS";
 			productName = "Pods-AudioLogger-iOS";
-			productReference = CC153B21969B4CCA717C55BC721D0FCD /* Pods_AudioLogger_iOS.framework */;
+			productReference = 9578205B63D2181D15110B0DDC6D7853 /* Pods_AudioLogger_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -711,59 +389,23 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3B6899B1399FBDDF38952FCE7A506B65 /* Products */;
+			productRefGroup = 406A81673D055E42DD8FCAFA873B79B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				544212980401A6DA7806F65EAD8C6637 /* Cartography */,
-				68E504159A95438F18EAACAB7BBD121C /* EZAudio */,
 				49442B834B6726B7A1387CC4B226F143 /* JPSVolumeButtonHandler */,
-				BAD72452EF09FC9F8DC0E37C74261705 /* Pods-AudioLogger-iOS */,
-				B42A1C563331D6A5A52594827651E956 /* TPCircularBuffer */,
+				5CC3A5CE3733885FB4F4F0892364A455 /* Pods-AudioLogger-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5C489D4C6CCB5B08080B9055C35D2649 /* Sources */ = {
+		95EB39FA5A18557B7B7E1174FA1DD6EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D768BC9B4912CC68EE767939247507E7 /* TPCircularBuffer+AudioBufferList.c in Sources */,
-				6B0B01CB3BDE996E8323253F760CBD38 /* TPCircularBuffer-dummy.m in Sources */,
-				6EBAB0888F63CFF715B58EDCBB5C6F64 /* TPCircularBuffer.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8CD3BE21F254EFA938CA144A281D4180 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EFBC379468F146CFEA561B3FAB37FE40 /* Pods-AudioLogger-iOS-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EF56B47545E5F8715268B4C50768EA3E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3894F9B23F5075D0944E036D85DF8929 /* EZAudio-dummy.m in Sources */,
-				D6BDEFBF9E38FB97649C7C4524D3B416 /* EZAudio.m in Sources */,
-				1DA7CE3B8FD808A45694FC8AB6B402F4 /* EZAudioDevice.m in Sources */,
-				8187ABD8FC38C9665E479C07345788F6 /* EZAudioDisplayLink.m in Sources */,
-				15442AF286C7E02B95CF4ED69A0455AD /* EZAudioFFT.m in Sources */,
-				229AC6F812432166C934DF127C314ADF /* EZAudioFile.m in Sources */,
-				FE0D8651FE598B41615EAC36775CD81D /* EZAudioFloatConverter.m in Sources */,
-				6E965455BD1F321EB9C294779BEFBE96 /* EZAudioFloatData.m in Sources */,
-				8B9CB0AFC51E7D91CC6C0187BC5F380B /* EZAudioPlayer.m in Sources */,
-				B0B7169A1E3ECFAF148DC72D612190FD /* EZAudioPlot.m in Sources */,
-				5B6DCBCD6C63B1D186D703D9F46A7ECB /* EZAudioPlotGL.m in Sources */,
-				CDACD3167C9250B4B13B8FC0FCF97CE8 /* EZAudioUtilities.m in Sources */,
-				79E97A074357DEECA6859DAACDB72DF2 /* EZMicrophone.m in Sources */,
-				9B0DE546FF8E9704B9F3F828BD396B6D /* EZOutput.m in Sources */,
-				30C1163E6E1E148CEF231EA8E68EF611 /* EZPlot.m in Sources */,
-				29CFB4CF50230793798F690E537EBD33 /* EZRecorder.m in Sources */,
-				B2C62634A0D83824F037E18C036DD453 /* TPCircularBuffer.c in Sources */,
+				B4588DF9CB27063247E91FAB360C5BAF /* Pods-AudioLogger-iOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,35 +450,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0FED6D118D781C18D551E4EE43DB33E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TPCircularBuffer;
-			target = B42A1C563331D6A5A52594827651E956 /* TPCircularBuffer */;
-			targetProxy = 8B8CB70FD30B629F9AB07F56635FAF98 /* PBXContainerItemProxy */;
-		};
-		2A6F2A328BF370F6BB8EB018E02A708E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EZAudio;
-			target = 68E504159A95438F18EAACAB7BBD121C /* EZAudio */;
-			targetProxy = D055B58905E97948691D8BB50CB8EC8D /* PBXContainerItemProxy */;
-		};
-		6B8B275E7911C5953235F47000929022 /* PBXTargetDependency */ = {
+		12D0A7F2EDC63ABD9C934E23EEEF9A24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JPSVolumeButtonHandler;
 			target = 49442B834B6726B7A1387CC4B226F143 /* JPSVolumeButtonHandler */;
-			targetProxy = 8BC4187761D9413E68E8E76B7C2B7E50 /* PBXContainerItemProxy */;
+			targetProxy = CC29F32E90DF66C49D824AD32CCDBE84 /* PBXContainerItemProxy */;
 		};
-		746556AB80847708C18DC96BC91267E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TPCircularBuffer;
-			target = B42A1C563331D6A5A52594827651E956 /* TPCircularBuffer */;
-			targetProxy = 8B07F04F586BBFBF57420F6814C37E50 /* PBXContainerItemProxy */;
-		};
-		9840DDB4A8B7249DCAD6E35C375CB0E4 /* PBXTargetDependency */ = {
+		A83E65DDBEE68DC73711BF76BF71B471 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Cartography;
 			target = 544212980401A6DA7806F65EAD8C6637 /* Cartography */;
-			targetProxy = AC4A8A2431E51EBB915A810B6118772B /* PBXContainerItemProxy */;
+			targetProxy = 650A8E845D1C455DAE06E6031FA86CEC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -885,77 +509,9 @@
 			};
 			name = Debug;
 		};
-		01BECF635E41A90141DCE8BD802F31F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADF5F4363EEC89A23B49C5A400C925CF /* TPCircularBuffer.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPCircularBuffer/TPCircularBuffer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPCircularBuffer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPCircularBuffer/TPCircularBuffer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TPCircularBuffer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0981871535BDACC4B917591823CF4A0D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E12C012202726B86D9AB8DEB68299D2 /* Pods-AudioLogger-iOS.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AudioLogger-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AudioLogger-iOS/Pods-AudioLogger-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AudioLogger_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		0FFE52730ABE733475BA70B2CC30D137 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 488469845FC23A20107B5487A57BDADF /* JPSVolumeButtonHandler.xcconfig */;
+			baseConfigurationReference = D69FC4FD787F7E68E5D19A55B908784B /* JPSVolumeButtonHandler.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1027,7 +583,7 @@
 		};
 		48231957691E46B4697342E285631D61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B393108985EC8B7E4E18E63CB7E31EB /* Cartography.xcconfig */;
+			baseConfigurationReference = 53FBA61135A4E92EC4428602FE753F24 /* Cartography.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1057,168 +613,7 @@
 			};
 			name = Release;
 		};
-		55A4CDDC71C44D91A6B4D9CBC2BAF90D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65AA16F015D552C4EA7F57FE538FFA5E /* EZAudio.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EZAudio/EZAudio-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EZAudio/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EZAudio/EZAudio.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = EZAudio;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		745E71DE4C4CB06D5E37221043E27AC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65AA16F015D552C4EA7F57FE538FFA5E /* EZAudio.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EZAudio/EZAudio-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EZAudio/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EZAudio/EZAudio.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = EZAudio;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AF0B666323E42FAB4674A69A1153C3CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 488469845FC23A20107B5487A57BDADF /* JPSVolumeButtonHandler.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = JPSVolumeButtonHandler;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AFBC27871C2920CC191C8966D6321521 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADF5F4363EEC89A23B49C5A400C925CF /* TPCircularBuffer.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPCircularBuffer/TPCircularBuffer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPCircularBuffer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPCircularBuffer/TPCircularBuffer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TPCircularBuffer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BCE4FC17A531C9E7C2D0AADD856CBDB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B393108985EC8B7E4E18E63CB7E31EB /* Cartography.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Cartography;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F3CED9C112E39F2B414FBE870EF9DD22 /* Release */ = {
+		5CBF949D532DD6754BFBBCEAEA5900B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22D95831489491B5B4857A36C0960D2B /* Pods-AudioLogger-iOS.release.xcconfig */;
 			buildSettings = {
@@ -1253,14 +648,115 @@
 			};
 			name = Release;
 		};
+		7DE4016088B67EEF434F8D44BB0C7C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E12C012202726B86D9AB8DEB68299D2 /* Pods-AudioLogger-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioLogger-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioLogger-iOS/Pods-AudioLogger-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AudioLogger_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF0B666323E42FAB4674A69A1153C3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D69FC4FD787F7E68E5D19A55B908784B /* JPSVolumeButtonHandler.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JPSVolumeButtonHandler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BCE4FC17A531C9E7C2D0AADD856CBDB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53FBA61135A4E92EC4428602FE753F24 /* Cartography.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16121ABC8953EF6561827B391E4990ED /* Build configuration list for PBXNativeTarget "TPCircularBuffer" */ = {
+		1230A5EB27F4128F57157C9119A2F2B9 /* Build configuration list for PBXNativeTarget "Pods-AudioLogger-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01BECF635E41A90141DCE8BD802F31F9 /* Debug */,
-				AFBC27871C2920CC191C8966D6321521 /* Release */,
+				7DE4016088B67EEF434F8D44BB0C7C0B /* Debug */,
+				5CBF949D532DD6754BFBBCEAEA5900B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1279,24 +775,6 @@
 			buildConfigurations = (
 				BCE4FC17A531C9E7C2D0AADD856CBDB1 /* Debug */,
 				48231957691E46B4697342E285631D61 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B149CE68E8A28C95DD72AA952BE0F556 /* Build configuration list for PBXNativeTarget "Pods-AudioLogger-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0981871535BDACC4B917591823CF4A0D /* Debug */,
-				F3CED9C112E39F2B414FBE870EF9DD22 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CD8C2B4096626025A2A6C1E20D7AC5DD /* Build configuration list for PBXNativeTarget "EZAudio" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				55A4CDDC71C44D91A6B4D9CBC2BAF90D /* Debug */,
-				745E71DE4C4CB06D5E37221043E27AC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

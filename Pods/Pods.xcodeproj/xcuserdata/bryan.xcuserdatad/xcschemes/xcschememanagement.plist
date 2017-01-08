@@ -9,22 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>EZAudio.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>JPSVolumeButtonHandler.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-AudioLogger-iOS.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>TPCircularBuffer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,17 +32,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68E504159A95438F18EAACAB7BBD121C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B42A1C563331D6A5A52594827651E956</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BAD72452EF09FC9F8DC0E37C74261705</key>
+		<key>5CC3A5CE3733885FB4F4F0892364A455</key>
 		<dict>
 			<key>primary</key>
 			<true/>

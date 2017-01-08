@@ -1,25 +1,15 @@
 PODS:
   - Cartography (1.0.1)
-  - EZAudio (1.1.5):
-    - EZAudio/Full (= 1.1.5)
-  - EZAudio/Core (1.1.5)
-  - EZAudio/Full (1.1.5):
-    - EZAudio/Core
-    - TPCircularBuffer (= 1.1)
   - JPSVolumeButtonHandler (1.0.2)
-  - TPCircularBuffer (1.1)
 
 DEPENDENCIES:
   - Cartography
-  - EZAudio
   - JPSVolumeButtonHandler
 
 SPEC CHECKSUMS:
   Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
-  EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
   JPSVolumeButtonHandler: 8ce88f49665827419084800570a20716a97cec48
-  TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
 
-PODFILE CHECKSUM: a4af4d412cb9dd490ae9b910c488d01b2a4ae31f
+PODFILE CHECKSUM: 51fe88c34aa72555b441b5fb24999ff3f3a5dde9
 
 COCOAPODS: 1.1.1

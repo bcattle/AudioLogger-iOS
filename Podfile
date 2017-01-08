@@ -6,7 +6,7 @@ target 'AudioLogger-iOS' do
   use_frameworks!
 
   # Pods for AudioLogger-iOS
-  pod 'EZAudio'
+#  pod 'EZAudio'
   pod 'JPSVolumeButtonHandler'
   pod 'Cartography'
 end

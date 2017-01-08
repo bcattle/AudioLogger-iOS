@@ -8,7 +8,8 @@
 
 import UIKit
 import AVFoundation
-import EZAudio
+import AudioToolbox
+import EZAudioiOS
 import JPSVolumeButtonHandler
 
 let AudioImageCellIdentifier = "AudioImageCell"
@@ -18,17 +19,19 @@ typealias AudioImageCell = FullscreenCell<UIImageView>
 typealias AudioPlotCell = FullscreenCell<EZAudioPlotGL>
 
 class TagViewController: UIViewController {
+    
     @IBOutlet weak var tableView:UITableView!
+    
     var audioPlot:EZAudioPlotGL?
     var microphone:EZMicrophone?
+    var recorder:EZRecorder?
+    
     var prevRows:[UIImage] = [UIImage]()
     var bufferCount = 0     // The number of microphone buffers we have received
     var sampleCount = 0     // The number of samples we have received
     var sampleRate:Int? = nil
     var samplesPerUpdate:Int? = nil
     var buttonHandler:JPSVolumeButtonHandler?
-//    var tickTimer:Timer!
-//    var timerHits = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,9 +41,6 @@ class TagViewController: UIViewController {
         tableView.rowHeight = rowHeight
         tableView.register(AudioImageCell.self, forCellReuseIdentifier: AudioImageCellIdentifier)
         tableView.register(AudioPlotCell.self, forCellReuseIdentifier: AudioPlotCellIdentifier)
-        
-//        tickTimer = Timer(timeInterval: 10.0, target: self, selector: #selector(TagViewController.tickTimerFired),
-//                          userInfo: nil, repeats: true)
         
         // Set up the audio session
         let session = AVAudioSession.sharedInstance()
@@ -66,25 +66,53 @@ class TagViewController: UIViewController {
         microphone = EZMicrophone(delegate: self)
         microphone!.startFetchingAudio()
         
+        // Intercept the volume buttons
         buttonHandler = JPSVolumeButtonHandler(up: { [weak self] in
-            self?.volumeButtonHit()
+            self?.volumeButtonTapped()
         }, downBlock: { [weak self] in
-                self?.volumeButtonHit()
+            self?.volumeButtonTapped()
         })
         buttonHandler!.start(true)
     }
-    
-//    func tickTimerFired() {
-//        timerHits += 1
-//        print("\(Double(timerHits) * tickTimer.timeInterval) secs")
-//    }
     
     func getSecs(numSamples: Int, sampleRate: Int) -> Float {
         return Float(numSamples) / Float(sampleRate)
     }
 
     func volumeButtonTapped() {
-        print("hit")
+        if recorder == nil {
+            startRecording()
+        } else {
+            stopRecording()
+        }
+    }
+    
+    func startRecording() {
+        // The microphone is already running, to start recording we make a recorder
+        // and it will get fed by the microphone on the next update
+        
+        let outputFileName = ""
+        let outputURL = URL(fileURLWithPath: outputFileName)
+        recorder = EZRecorder(url: outputURL, clientFormat: microphone!.audioStreamBasicDescription(), fileType: .M4A)
+        
+//        // TODO: Set the encoder bitrate
+//        var audioConverter:AudioConverterRef
+//        var propSize = MemoryLayout<AudioConverterRef>.size
+//        
+//        var status = ExtAudioFileGetProperty(recorder!.info.extAudioFileRef,
+//                                             kExtAudioFileProperty_AudioConverter,
+//                                             &propSize,
+//                                             &audioConverter)
+//        
+//        var bitrate:UInt32
+//        var brSize = UInt32(MemoryLayout<UInt32>.size)
+//        AudioConverterGetProperty(audioConverter, kAudioConverterEncodeBitRate, &brSize, &bitrate)
+////        AudioConverterSetProperty(audioConverter, kAudioConverterEncodeBitRate, &brSize, &bitrate)
+    }
+    
+    func stopRecording() {
+        recorder?.closeAudioFile()
+        recorder = nil
     }
 }
 
@@ -97,6 +125,16 @@ extension TagViewController: EZMicrophoneDelegate {
             self?.sampleRate = Int(round(audioStreamBasicDescription.mSampleRate))
         }
     }
+    
+//    func microphone(_ microphone: EZMicrophone!, changedPlayingState isPlaying: Bool) {
+//        DispatchQueue.main.async { [weak self] in
+//            if isPlaying {
+//                
+//            } else {
+//                
+//            }
+//        }
+//    }
     
     func microphone(_ microphone: EZMicrophone!,
                     hasAudioReceived buffer: UnsafeMutablePointer<UnsafeMutablePointer<Float>?>!,
@@ -120,10 +158,6 @@ extension TagViewController: EZMicrophoneDelegate {
                         }
                         strongSelf.tableView.scrollToRow(at: IndexPath(row:strongSelf.prevRows.count, section:0), at: .bottom, animated: true)
                     }
-//                    // Start the tickTimer if necessary
-//                    if !strongSelf.tickTimer.isValid {
-//                        RunLoop.current.add(strongSelf.tickTimer, forMode: .commonModes)
-//                    }
                 }
             }
         }
@@ -134,7 +168,12 @@ extension TagViewController: EZMicrophoneDelegate {
                     withBufferSize bufferSize: UInt32,
                     withNumberOfChannels numberOfChannels: UInt32)
     {
-        // Can be fed to EZRecorder or EZOutput
+        DispatchQueue.main.async { [weak self] in
+            // Can be fed to EZRecorder or EZOutput
+            if let recorder = self?.recorder {
+                recorder.appendData(from:bufferList, withBufferSize:bufferSize)
+            }
+        }
     }
 }
 
