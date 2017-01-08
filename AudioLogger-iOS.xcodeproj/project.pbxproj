@@ -160,8 +160,8 @@
 		93C707BC1E19C101008A0A39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = bcattle;
 				TargetAttributes = {
 					93C707C31E19C101008A0A39 = {

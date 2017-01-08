@@ -86,10 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Cartography/Cartography.framework"
   install_framework "$BUILT_PRODUCTS_DIR/EZAudio/EZAudio.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JPSVolumeButtonHandler/JPSVolumeButtonHandler.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TPCircularBuffer/TPCircularBuffer.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Cartography/Cartography.framework"
   install_framework "$BUILT_PRODUCTS_DIR/EZAudio/EZAudio.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JPSVolumeButtonHandler/JPSVolumeButtonHandler.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TPCircularBuffer/TPCircularBuffer.framework"
 fi

@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JPSVolumeButtonHandler.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AudioLogger-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,6 +32,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>49442B834B6726B7A1387CC4B226F143</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>544212980401A6DA7806F65EAD8C6637</key>
 		<dict>
 			<key>primary</key>
@@ -37,12 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7EBD69497FF84BB774F3A9393BC97C8B</key>
+		<key>B42A1C563331D6A5A52594827651E956</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B42A1C563331D6A5A52594827651E956</key>
+		<key>BAD72452EF09FC9F8DC0E37C74261705</key>
 		<dict>
 			<key>primary</key>
 			<true/>
