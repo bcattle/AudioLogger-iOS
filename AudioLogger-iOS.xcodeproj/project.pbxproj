@@ -10,6 +10,8 @@
 		327912DE3A84D738ED79B73C /* Pods_AudioLogger_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1046029DD0533C30368EA2E5 /* Pods_AudioLogger_iOS.framework */; };
 		9350163C1E1A076700B986D8 /* IDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350163B1E1A076700B986D8 /* IDViewController.swift */; };
 		9350163F1E1A07D400B986D8 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350163E1E1A07D400B986D8 /* TagViewController.swift */; };
+		939B39B61E22FF43007230E1 /* EZAudioiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939B39AF1E22F0A9007230E1 /* EZAudioiOS.framework */; };
+		939B39B71E22FF43007230E1 /* EZAudioiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 939B39AF1E22F0A9007230E1 /* EZAudioiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		93C707C81E19C101008A0A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C707C71E19C101008A0A39 /* AppDelegate.swift */; };
 		93C707CA1E19C101008A0A39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C707C91E19C101008A0A39 /* MainViewController.swift */; };
 		93C707CD1E19C101008A0A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C707CB1E19C101008A0A39 /* Main.storyboard */; };
@@ -40,7 +42,28 @@
 			remoteGlobalIDString = 469F4CF21B749F7800666A46;
 			remoteInfo = EZAudioiOS;
 		};
+		939B39B81E22FF43007230E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 939B39A91E22F0A8007230E1 /* EZAudio.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 469F4CF21B749F7800666A46;
+			remoteInfo = EZAudioiOS;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		939B39BA1E22FF43007230E1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				939B39B71E22FF43007230E1 /* EZAudioiOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1046029DD0533C30368EA2E5 /* Pods_AudioLogger_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioLogger_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939B39B61E22FF43007230E1 /* EZAudioiOS.framework in Frameworks */,
 				327912DE3A84D738ED79B73C /* Pods_AudioLogger_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,11 +212,13 @@
 				93C707C21E19C101008A0A39 /* Resources */,
 				5E1E2BBE653BF66A812BAD57 /* [CP] Embed Pods Frameworks */,
 				3CEF808E8B69AA91562D04B6 /* [CP] Copy Pods Resources */,
+				939B39BA1E22FF43007230E1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				939B39B51E22F0F2007230E1 /* PBXTargetDependency */,
+				939B39B91E22FF43007230E1 /* PBXTargetDependency */,
 			);
 			name = "AudioLogger-iOS";
 			productName = "AudioLogger-iOS";
@@ -339,6 +365,11 @@
 			isa = PBXTargetDependency;
 			name = EZAudioiOS;
 			targetProxy = 939B39B41E22F0F2007230E1 /* PBXContainerItemProxy */;
+		};
+		939B39B91E22FF43007230E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EZAudioiOS;
+			targetProxy = 939B39B81E22FF43007230E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

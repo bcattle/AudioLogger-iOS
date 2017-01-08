@@ -91,15 +91,20 @@ class TagViewController: UIViewController {
         // The microphone is already running, to start recording we make a recorder
         // and it will get fed by the microphone on the next update
         
-        let outputFileName = ""
-        let outputURL = URL(fileURLWithPath: outputFileName)
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MMM-d h:mm:ss a"
+        let dateStr = formatter.string(from: Date())
+        let outputFile = "\(dateStr).m4a"
+        let documents = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+
+        let outputURL = URL(fileURLWithPath: documents).appendingPathComponent(outputFile)
         recorder = EZRecorder(url: outputURL, clientFormat: microphone!.audioStreamBasicDescription(), fileType: .M4A)
         
-//        // TODO: Set the encoder bitrate
-//        var audioConverter:AudioConverterRef
-//        var propSize = MemoryLayout<AudioConverterRef>.size
+//        // Set the encoder bitrate
+//        var audioConverter = AudioConverterRef()
+//        var propSize = UInt32(MemoryLayout<AudioConverterRef>.size)
 //        
-//        var status = ExtAudioFileGetProperty(recorder!.info.extAudioFileRef,
+//        var status = ExtAudioFileGetProperty(recorder!.info.pointee.extAudioFileRef,
 //                                             kExtAudioFileProperty_AudioConverter,
 //                                             &propSize,
 //                                             &audioConverter)
@@ -108,11 +113,14 @@ class TagViewController: UIViewController {
 //        var brSize = UInt32(MemoryLayout<UInt32>.size)
 //        AudioConverterGetProperty(audioConverter, kAudioConverterEncodeBitRate, &brSize, &bitrate)
 ////        AudioConverterSetProperty(audioConverter, kAudioConverterEncodeBitRate, &brSize, &bitrate)
+        
+        print("Starting to record to \(outputFile)")
     }
     
     func stopRecording() {
         recorder?.closeAudioFile()
         recorder = nil
+        print("Finished recording")
     }
 }
 
