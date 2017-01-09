@@ -62,7 +62,7 @@ class TagViewController: UIViewController {
         // Set up the audio session
         let session = AVAudioSession.sharedInstance()
         do {
-            try session.setCategory(AVAudioSessionCategoryRecord)
+            try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
             try session.setActive(true)
         } catch let error {
             print("Error setting up audio session: \(error)")
@@ -86,9 +86,13 @@ class TagViewController: UIViewController {
         
         // Intercept the volume buttons
         buttonHandler = JPSVolumeButtonHandler(up: { [weak self] in
-            self?.volumeButtonTapped()
+            if self?.presentedViewController == nil {
+                self?.volumeButtonTapped()
+            }
         }, downBlock: { [weak self] in
-            self?.volumeButtonTapped()
+            if self?.presentedViewController == nil {
+                self?.volumeButtonTapped()
+            }
         })
         buttonHandler!.start(true)
     }
@@ -148,6 +152,13 @@ class TagViewController: UIViewController {
             print("Error: \(error)")
             return nil
         }
+    }
+    
+    @IBAction func handleLongPress(sender:UILongPressGestureRecognizer) {
+        // self.performSegue(withIdentifier: "PresentFileList", sender: sender)
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FileListViewController") as UIViewController
+        vc.modalPresentationStyle = .overCurrentContext
+        present(vc, animated: true, completion: nil)
     }
 }
 
