@@ -42,6 +42,7 @@ class TagViewController: UIViewController {
     var recorder:EZRecorder?
     
     var prevRows:[UIImage] = [UIImage]()
+    var fullScreenBufferWidth = 512
     var currRowBufferCount = 0     // The number of microphone buffers we have received
     var sampleCount = 0     // The number of samples we have received
     var sampleRate:Int? = nil
@@ -78,6 +79,7 @@ class TagViewController: UIViewController {
         audioPlot!.shouldFill      = true
         audioPlot!.shouldMirror    = true
         audioPlot!.gain = 10.0
+        audioPlot!.setRollingHistoryLength(Int32(fullScreenBufferWidth))
         
         microphone = EZMicrophone(delegate: self)
         microphone!.startFetchingAudio()
@@ -143,7 +145,7 @@ class TagViewController: UIViewController {
                 print("Finished recording, size \(size)")
             }
             self.recorder = nil
-            plotCellImageWidth = CGFloat(currRowBufferCount) / CGFloat(audioPlot!.rollingHistoryLength()) * tableView.bounds.width;
+            plotCellImageWidth = CGFloat(currRowBufferCount) / CGFloat(fullScreenBufferWidth) * tableView.bounds.width;
 //            plotCellImageWidth = CGFloat(currRowBufferCount) / CGFloat(512) * tableView.bounds.width;
             plotCellImage = audioPlot!.superview!.getSnapshotImage()
             UIView.performWithoutAnimation {
@@ -197,7 +199,9 @@ extension TagViewController: EZMicrophoneDelegate {
                     strongSelf.sampleCount += Int(bufferSize)
                     strongSelf.samplesPerUpdate = Int(bufferSize)
                     // A full screen's width is `audioPlot.rollingHistoryLength()` buffers
-                    if strongSelf.currRowBufferCount % Int(audioPlot.rollingHistoryLength()) == 0 {
+//                    if strongSelf.currRowBufferCount % Int(audioPlot.rollingHistoryLength()) == 0 {
+//                    if strongSelf.currRowBufferCount == strongSelf.rowRemainingBuffers {
+                    if strongSelf.currRowBufferCount == strongSelf.fullScreenBufferWidth {
                         // Make a new row
                         strongSelf.currRowBufferCount = 0
                         strongSelf.prevRows.append(audioPlot.superview!.getSnapshotImage())
@@ -206,9 +210,12 @@ extension TagViewController: EZMicrophoneDelegate {
                         audioPlot.clear()
                         UIView.performWithoutAnimation {
                             strongSelf.tableView.insertRows(at: [IndexPath(row:strongSelf.prevRows.count - 1, section:0)], with: .none)
+                            strongSelf.tableView.reloadRows(at: [IndexPath(row:strongSelf.prevRows.count, section:0)], with: .none)
                         }
                         strongSelf.tableView.scrollToRow(at: IndexPath(row:strongSelf.prevRows.count, section:0), at: .bottom, animated: true)
                     }
+                } else {
+                    print("audioPlot is nil!")
                 }
             }
         }
@@ -239,11 +246,13 @@ extension TagViewController: UITableViewDataSource {
             if let plotCellImage = plotCellImage, let plotCellImageWidth = plotCellImageWidth, let audioPlot = audioPlot {
                 let cell = tableView.dequeueReusableCell(withIdentifier: SplitAudioPlotCellIdentifier, for: indexPath) as! SplitAudioPlotCell
                 cell.rightView = audioPlot
-                audioPlot.clear()
+//                rowRemainingBuffers = Int(round(plotCellImageWidth / tableView.bounds.width * CGFloat(fullScreenBufferWidth)))
+//                audioPlot.setRollingHistoryLength(Int32(round(plotCellImageWidth / tableView.bounds.width * CGFloat(fullScreenBufferWidth))))
                 let imageView = UIImageView(image: plotCellImage)
                 imageView.contentMode = .left
                 cell.leftView = imageView
                 cell.leftViewWidth = plotCellImageWidth
+                audioPlot.clear()
                 cell.backgroundColor = UIColor.clear
                 if recorder != nil {
                     audioPlot.color = activePlotColor
@@ -254,12 +263,13 @@ extension TagViewController: UITableViewDataSource {
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: AudioPlotCellIdentifier, for: indexPath) as! AudioPlotCell
                 cell.fullscreenView = audioPlot
+//                rowRemainingBuffers = fullScreenBufferWidth
                 cell.backgroundColor = UIColor.clear
                 return cell
             }
         }
         else {
-            // An audio image cell
+            // A previous row image
             let cell = tableView.dequeueReusableCell(withIdentifier: AudioImageCellIdentifier, for: indexPath) as! AudioImageCell
             cell.fullscreenView?.image = prevRows[indexPath.row]
             cell.backgroundColor = UIColor.clear

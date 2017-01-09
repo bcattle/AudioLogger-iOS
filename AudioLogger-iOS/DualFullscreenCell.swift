@@ -43,8 +43,13 @@ class DualFullscreenCell<T:UIView, U:UIView>: UITableViewCell {
                     view.width == newWidth
                     view2.top == view.superview!.top
                     view2.bottom == view.superview!.bottom
-                    view2.right == view2.superview!.right
+                    view2.width == view2.superview!.width
                 }
+//                // DEBUG
+//                leftView!.layer.borderColor = UIColor.yellow.cgColor
+//                leftView!.layer.borderWidth = 1
+//                rightView!.layer.borderColor = UIColor.red.cgColor
+//                rightView!.layer.borderWidth = 1
             }
         }
     }

@@ -10,29 +10,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AudioLogger-iOS/TagViewController.swift"
-            timestampString = "505635065.776498"
+            timestampString = "505637424.24319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AudioLogger-iOS/TagViewController.swift"
-            timestampString = "505635180.920487"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
-            landmarkName = "microphone(_:hasAudioReceived:withBufferSize:withNumberOfChannels:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AudioLogger_iOS.TagViewController.tableView (__ObjC.UITableView, cellForRowAt : Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "AudioLogger-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bryan/Documents/Wingnut/AudioLogger-iOS/AudioLogger-iOS/TagViewController.swift"
+                  timestampString = "505637424.352762"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "246"
+                  endingLineNumber = "246"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AudioLogger_iOS.TagViewController.tableView (__ObjC.UITableView, cellForRowAt : Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "AudioLogger-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bryan/Documents/Wingnut/AudioLogger-iOS/AudioLogger-iOS/TagViewController.swift"
+                  timestampString = "505637424.354107"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "246"
+                  endingLineNumber = "246"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
