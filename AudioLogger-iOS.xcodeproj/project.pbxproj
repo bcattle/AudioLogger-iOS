@@ -12,6 +12,7 @@
 		9350163F1E1A07D400B986D8 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350163E1E1A07D400B986D8 /* TagViewController.swift */; };
 		939B39B61E22FF43007230E1 /* EZAudioiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939B39AF1E22F0A9007230E1 /* EZAudioiOS.framework */; };
 		939B39B71E22FF43007230E1 /* EZAudioiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 939B39AF1E22F0A9007230E1 /* EZAudioiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		939B39BE1E23084E007230E1 /* DualFullscreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B39BD1E23084E007230E1 /* DualFullscreenCell.swift */; };
 		93C707C81E19C101008A0A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C707C71E19C101008A0A39 /* AppDelegate.swift */; };
 		93C707CA1E19C101008A0A39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C707C91E19C101008A0A39 /* MainViewController.swift */; };
 		93C707CD1E19C101008A0A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C707CB1E19C101008A0A39 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		9350163E1E1A07D400B986D8 /* TagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
 		9384DAE91E1A358E002CC0B0 /* AudioLogger-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioLogger-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		939B39A91E22F0A8007230E1 /* EZAudio.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EZAudio.xcodeproj; path = Dependencies/EZAudio/EZAudio.xcodeproj; sourceTree = SOURCE_ROOT; };
+		939B39BD1E23084E007230E1 /* DualFullscreenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DualFullscreenCell.swift; sourceTree = "<group>"; };
 		93C707C41E19C101008A0A39 /* AudioLogger-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AudioLogger-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C707C71E19C101008A0A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93C707C91E19C101008A0A39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				93D8F9BA1E20CD3200E2D94E /* FullscreenCell.swift */,
+				939B39BD1E23084E007230E1 /* DualFullscreenCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939B39BE1E23084E007230E1 /* DualFullscreenCell.swift in Sources */,
 				93C707CA1E19C101008A0A39 /* MainViewController.swift in Sources */,
 				9350163F1E1A07D400B986D8 /* TagViewController.swift in Sources */,
 				93C707C81E19C101008A0A39 /* AppDelegate.swift in Sources */,
