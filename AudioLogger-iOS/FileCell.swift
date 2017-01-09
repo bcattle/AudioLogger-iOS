@@ -10,7 +10,8 @@ import UIKit
 
 class FileCell: UITableViewCell {
     @IBOutlet weak var label:UILabel!
-        
+    @IBOutlet weak var sizeLabel:UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

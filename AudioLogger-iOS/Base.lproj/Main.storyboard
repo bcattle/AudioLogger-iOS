@@ -225,20 +225,29 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yB9-rL-ld1">
-                                                    <rect key="frame" x="8" y="13.5" width="359" height="17"/>
+                                                    <rect key="frame" x="8" y="14" width="324" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="20KB" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVn-Bd-eZ6">
+                                                    <rect key="frame" x="336" y="14.5" width="31" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="yB9-rL-ld1" firstAttribute="trailing" secondItem="mDS-Ah-yUO" secondAttribute="trailingMargin" id="FCF-gX-JrP"/>
+                                                <constraint firstItem="xVn-Bd-eZ6" firstAttribute="trailing" secondItem="mDS-Ah-yUO" secondAttribute="trailingMargin" id="LcB-kQ-aJW"/>
+                                                <constraint firstItem="xVn-Bd-eZ6" firstAttribute="leading" secondItem="yB9-rL-ld1" secondAttribute="trailing" constant="4" id="PT9-De-Qah"/>
                                                 <constraint firstItem="yB9-rL-ld1" firstAttribute="leading" secondItem="mDS-Ah-yUO" secondAttribute="leadingMargin" id="cRs-xK-fR5"/>
                                                 <constraint firstItem="yB9-rL-ld1" firstAttribute="centerY" secondItem="mDS-Ah-yUO" secondAttribute="centerY" id="skC-f1-956"/>
+                                                <constraint firstItem="xVn-Bd-eZ6" firstAttribute="centerY" secondItem="mDS-Ah-yUO" secondAttribute="centerY" id="ytU-r9-WwR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="label" destination="yB9-rL-ld1" id="E6d-cG-SKZ"/>
+                                            <outlet property="sizeLabel" destination="xVn-Bd-eZ6" id="cjT-03-Fa9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
